@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=san">
 </head>
-<body>
+<body class="fix-header fix-siebar">
     
     @include('Layout.menu')
 
@@ -17,12 +17,15 @@
     @yield('content')
 
 
-    @include('Layout.footer')
+    {{-- @include('Layout.footer') --}}
 
 
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/jquery-3.2.1.slim.min.js')}}"></script>
     <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/sidebar.min.js')}}"></script>
+    <script src="{{asset('js/sidebarmenu.js')}}"></script>
+    <script src="{{asset('js/sticky-kit.min.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
 </body>
 </html>
