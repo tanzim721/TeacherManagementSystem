@@ -1,15 +1,14 @@
 body{
     font-family: 'Open Sans';
 }
-.brand-logo{
-    width: 40px;
-    height: 50px;
+.Varity-logo{
+    width: 60px;
+    height: 70px;
 }
 .nav-link{
     color: black;
     font-weight: bold;
 }
-
 .banner{
     background-image: url('/images/banner.webp');
     min-height: 400px;
