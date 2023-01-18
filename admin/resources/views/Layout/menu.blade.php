@@ -1,20 +1,44 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto ml-3 pl-4 mt-2 mt-lg-0">
-            <a class="navbar-brand" href="#"><img class=" Varity-logo" src="{{asset('images/download.png')}}" alt=""></a>
-            <li class="nav-item pt-3 "">
-            <a class="nav-link" href="#">Home </span></a>
-            </li>
-            <li class="nav-item pt-3">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item pt-3">
-            <a class="nav-link " href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 pr-4">
-            <button class="btn my-2 my-sm-0 text-bold " type="submit"><a href="#">Logout</a></button>
-        </form>
+
+<div class="form-inline">
+    <div class="input-group" data-widget="sidebar-search">
+        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+            <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+            </button>
+        </div> 
     </div>
+</div>
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+            with font-awesome or any other icon font library -->
+        <li class="nav-item has-treeview">           
+            <a href="#" class="nav-link"> 
+                <i class="nav-icon fas fa-copy"></i> 
+                <p>
+                    Manage Students
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>View Student</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Change Password</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
 </nav>
+<!-- /.sidebar-menu
