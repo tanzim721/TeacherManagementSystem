@@ -24,32 +24,42 @@
                  proident.
                 </div>
               </div>
-            </p> --}}
+            </p> --}} 
         <li class="nav-item has-treeview">           
             <a href="#" class="nav-link"> 
-                <i class="nav-icon fas fa-copy"></i> 
+                <i class="nav-icon fas fa-home"></i> 
                 <p>
-                    Menu
+                    Home
                     <i class="fas fa-angle-left right"></i>
                 </p>
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
+                        <i class="far fa-users nav-icon"></i>
                         <p>View Student</p>
                     </a>
                 </li>
-
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Change Password</p>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </li>
-        
+        {{-- <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <span>Name</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <div class="dropdown-divider"></div>
+                <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="dropdown-item dropdown-footer">{{__('Logout')}}</a>
+                <form id="logout-form" action="#" method="POST" class="d-none">
+                    @csrf
+                </form> 
+            </div>
+        </li> --}}
     </ul>
 </nav>
 <!-- /.sidebar-menu

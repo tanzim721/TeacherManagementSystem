@@ -67,7 +67,7 @@
             </ul>
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-            <!-- Navbar Search -->
+            <!-- Navbar Search --> 
                 <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                     <i class="fas fa-search"></i>
@@ -83,11 +83,11 @@
                             <button class="btn btn-navbar" type="button" data-widget="navbar-search">
                             <i class="fas fa-times"></i>
                             </button>
-                        </div>
+                        </div> 
                         </div>
                     </form>
                     </div>
-                </li>
+                </li> 
                 <!-- Notifications Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
