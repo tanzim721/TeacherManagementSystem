@@ -64,7 +64,7 @@
                         <tbody>
                             @foreach($allData as $key => $visitor)
                             <tr>
-                                <td>{{$key+1}}.</td>
+                                <td>{{$visitor->id}}.</td>
                                 <td>{{$visitor->ip_address}}</td>
                                 <td>{{$visitor->visit_time}}</td>
                                 <td>

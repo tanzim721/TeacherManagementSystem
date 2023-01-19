@@ -19,7 +19,7 @@
             </li>
         </ul>
         <div class="text-aline:right col-lg-1">
-            <button class="btn btn-outline-black my-2 my-sm-0 font-weight-bold" type="submit"><a href="#">Logout</a></button>
+            <button class="btn btn-outline-black my-2 my-sm-0 font-weight-bold" type="submit"><a href="#">Login</a></button>
         </div>
     </div>
 </nav>
