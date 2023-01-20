@@ -15,11 +15,11 @@
                 <a class="nav-link" href="{{url('/')}}">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url('/')}}">ABOUT</a>
+                <a class="nav-link" href="{{url('/')}}">NOTICES</a>
             </li>
         </ul>
         <div class="text-aline:right col-lg-1">
-            <button class="btn btn-outline-black my-2 my-sm-0 font-weight-bold" type="submit"><a href="#">Login</a></button>
+            <a href="#"><button class="btn btn-info btn-outline-black my-2 my-sm-0 " type="submit">LOGIN</button></a>
         </div>
     </div>
 </nav>
