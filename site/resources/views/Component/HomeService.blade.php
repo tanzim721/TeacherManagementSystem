@@ -1,44 +1,17 @@
 <div class="container">
     <div class="row ">
+        @foreach($ServicesData as $key => $services)
         <div class="col-md-3 width-100% p-2">
             <div class="card" style="width: 16rem;" >
-                <img style="width: 100%; height:250px" class="card-img-top" src="{{asset('images/banner.jpg')}}" alt="Card image cap">
+                <img style="width: 100%; height:250px" class="card-img-top" src="{{$services->service_img}}" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>                  
+                  <h5 class="card-title">{{$services->service_name}}</h5>
+                  <p class="card-text">{{$services->service_des}}</p>
+                  <a href="#" class="btn btn-primary">Go Details</a>
+                </div>      
             </div>
         </div>
-        <div class="col-md-3 width-100% p-2">
-            <div class="card" style="width: 16rem;" >
-                <img style="width: 100%; height:250px" class="card-img-top" src="{{asset('images/banner.jpg')}}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 width-100% p-2">
-            <div class="card" style="width: 16rem;" >
-                <img style="width: 100%; height:250px" class="card-img-top" src="{{asset('images/banner.jpg')}}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 width-100% p-2">
-            <div class="card" style="width: 16rem;" >
-                <img style="width: 100%; height:250px" class="card-img-top" src="{{asset('images/banner.jpg')}}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
+    
 </div>
