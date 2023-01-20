@@ -2,22 +2,33 @@ body{
     font-family: 'Open Sans';
 }
 .brand-logo{
-    width: 40px;
-    height: 50px;
+    width: 60px;
+    height: 70px;
 }
 .nav-link{
     color: black;
     font-weight: bold;
 }
 
-.banner{
+/* .banner{
     background-image: url('/images/banner.webp');
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.bannerText{
+} */
+/* .bannerText{
     margin-top: 150px;
+} */
+
+.banner{
+    max-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backcolor{
+    background-color: rgb(253, 253, 253);
 }

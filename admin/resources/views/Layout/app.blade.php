@@ -103,7 +103,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-            <img src="{{asset('images/')}}/download.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <img src="{{asset('images/')}}/ice logo.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 1.2">
             <span class="brand-text font-weight-light">ICE Association</span>
             </a>
         
@@ -124,15 +124,8 @@
         @endif
     
     
-        <div class="">
-            <footer class="main-footer ">
-                <strong>Copyright &copy; <?php echo "2010-".date("Y"); ?> <a href="#">ICE Association</a> </strong>
-                All rights reserved.
-                <div class="float-right d-none d-sm-inline-block">
-                    <b class="pr-1">Developed by <a href="#">Tanzimul Islam</a></b>
-                </div>
-            </footer>
-        </div>
+        @include('Layout.footer')
+
       
     
         <!-- <aside class="control-sidebar control-sidebar-dark">
@@ -182,7 +175,7 @@
     <!-- AdminLTE App -->
     <script src="{{asset('backend/')}}/dist/js/adminlte.js"></script> 
     <!-- AdminLTE for demo purposes -->
-    <!-- <script src="{{asset('backend/')}}/dist/js/demo.js"></script>  -->
+    {{-- <script src="{{asset('backend/')}}/dist/js/demo.js"></script> --}}
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{asset('backend/')}}/dist/js/pages/dashboard.js"></script> 
     <!-- DataTables  & Plugins -->

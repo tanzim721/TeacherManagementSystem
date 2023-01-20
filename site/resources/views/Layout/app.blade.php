@@ -39,7 +39,7 @@
     @yield('content')
 
 
-    {{-- @include('Layout.footer') --}}
+    @include('Layout.footer')
 
     <script src="{{asset('backend/')}}/plugins/jquery/jquery.min.js"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
@@ -48,6 +48,7 @@
     <script src="{{asset('js/sidebar.min.js')}}"></script>
     <script src="{{asset('js/sidebarmenu.js')}}"></script>
     <script src="{{asset('js/sticky-kit.min.js')}}"></script>
+    <script src="{{asset('js/custom.js')}}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- jQuery UI 1.11.4 -->
@@ -79,7 +80,7 @@
     <!-- AdminLTE App -->
     <script src="{{asset('backend/')}}/dist/js/adminlte.js"></script> 
     <!-- AdminLTE for demo purposes -->
-    <!-- <script src="{{asset('backend/')}}/dist/js/demo.js"></script>  -->
+    {{-- <script src="{{asset('backend/')}}/dist/js/demo.js"></script>  --}}
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{asset('backend/')}}/dist/js/pages/dashboard.js"></script> 
 

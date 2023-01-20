@@ -1,4 +1,5 @@
 @extends('Layout.App')
+@section('title', 'Visitor')
 
 @section('content')
     {{-- <div class="container">
@@ -20,7 +21,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h4 class="m-0 pl-3 text-bold">Visitor List</h4>
+                <h5 class="m-0 pl-3 text-bold">Visitor List</h5>
               </div><!-- /.col -->
               <div class="col-sm-6">
                 <!-- <ol class="breadcrumb float-sm-right">
@@ -49,15 +50,15 @@
                     
                   </div><!-- /.card-header --> --}}
                   <div class="card-body">
-                    {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
-                    <table id="example1" class="table table-bordered table-hover text-center">
+                    <table id="VisitorDt" class="table table-bordered table-hover text-center">
+                    {{-- <table id="example1" class="table table-bordered table-hover text-center"> --}}
                     {{-- <table id="example2" class="table table-bordered table-hover text-center"> --}}
                         <thead>
                             <tr>
                             <th>No</th>
                             <th>IP</th>
                             <th>Date & Time</th>
-                            <th>Action</th>
+                            {{-- <th>Action</th> --}}
                             </tr>
                         </thead>
                        
@@ -67,10 +68,10 @@
                                 <td>{{$visitor->id}}.</td>
                                 <td>{{$visitor->ip_address}}</td>
                                 <td>{{$visitor->visit_time}}</td>
-                                <td>
-                                    {{-- <a href="#" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a>  --}}
+                                {{-- <td>
+                                    <a href="#" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
                                     <a href="#" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
-                                </td>
+                                </td> --}}
                             </tr>
                             @endforeach
                         </tbody>
