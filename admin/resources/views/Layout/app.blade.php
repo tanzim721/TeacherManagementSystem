@@ -7,6 +7,9 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    {{-- <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.rtl.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.dark.min.css')}}"> --}}
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=san">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -29,12 +32,11 @@
     <link rel="stylesheet" href="{{asset('backend/')}}/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="{{asset('backend/')}}/plugins/summernote/summernote-bs4.min.css">
-    <!-- jQuery -->   
+    <!-- jQuery -->
     <style type="text/css">
         .notifyjs-corner{
           z-index: 10000 !important;
         }
-        
       </style>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -57,7 +59,7 @@
                 </li> --}}
             </ul>
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">         
             <!-- Navbar Search --> 
                 {{-- <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
@@ -95,7 +97,6 @@
                         </form> 
                     </div>
                 </li>
-            
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -103,10 +104,10 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
-            <img src="{{asset('images/')}}/ice logo.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 1.2">
-            <span class="brand-text font-weight-light">ICE Association</span>
+              <img src="{{asset('images/')}}/ice logo.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: 1.2">
+              <span class="brand-text font-weight-light">ICE Association</span>
             </a>
-        
+            
             <!-- Sidebar -->
             <div class="sidebar">         
                 @include('Layout.menu')
@@ -148,6 +149,7 @@
     <script src="{{asset('js/sidebar.min.js')}}"></script>
     <script src="{{asset('js/sidebarmenu.js')}}"></script>
     <script src="{{asset('js/sticky-kit.min.js')}}"></script>
+    {{-- <script src="{{asset('js/mdb.min.js')}}"></script> --}}
     <script src="{{asset('backend/')}}/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>

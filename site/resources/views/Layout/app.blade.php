@@ -7,6 +7,9 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.rtl.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.dark.min.css')}}">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=san">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -49,6 +52,7 @@
     <script src="{{asset('js/sidebarmenu.js')}}"></script>
     <script src="{{asset('js/sticky-kit.min.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
+    <script src="{{asset('js/mdb.min.js')}}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- jQuery UI 1.11.4 -->

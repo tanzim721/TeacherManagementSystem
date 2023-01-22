@@ -3,13 +3,12 @@
 
 
 @section('content')
-    
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
+        <!-- Content Header (Page header) --> 
+        <div class="content-header">    
           <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col-sm-6">
+            <div class="row mb-2">  
+              <div class="col-sm-6"> 
                 <h5 class="m-0 pl-3 text-bold">Services List</h5>
               </div><!-- /.col -->
               <div class="col-sm-6">
@@ -32,11 +31,10 @@
               <!-- Left col -->
               <section class="col-md-12 connectedSortable">
                 <!-- Custom tabs (Charts with tabs)-->
-                <div class="card">
-                 
+                <div class="card">        
                   <div class="card-body">
-                    <table id="VisitorDt" class="table table-bordered table-hover text-center">
-                    {{-- <table id="example1" class="table table-bordered table-hover text-center"> --}}
+                    {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
+                    <table id="example1" class="table table-bordered table-hover text-center">
                     {{-- <table id="example2" class="table table-bordered table-hover text-center"> --}}
                         <thead>
                             <tr>
