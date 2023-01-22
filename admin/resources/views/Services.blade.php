@@ -47,31 +47,25 @@
                             <th>Delete</th>
                             </tr>
                         </thead>
-                       
                         <tbody>
                             @foreach($ServicesData as $key => $services)
                             <tr>
                                 <td><img style="width: 50px; height:50px" class="card-img-top" src="{{$services->service_img}}" alt="Card image cap"></td>
-                                {{-- <th><img src="{{asset($services->service_img)}}" alt="img"></th> --}}
                                 <td>{{$services->service_name}}</td>
                                 <td>{{$services->service_des}}</td>
                                 <td><a href="#" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> </td>
                                 <td><a href="#" class="btn btn-sm btn-danger" title="delete"><i class="fa fa-trash"></i></a> </td>
-                                {{-- <td>{{$visitor->id}}.</td>
-                                <td>{{$visitor->ip_address}}</td>
-                                <td>{{$visitor->visit_time}}</td> --}}
-                                {{-- <td>
-                                    <a href="#" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
-                                    <a href="#" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
-                                </td> --}}
                             </tr>
                             @endforeach
                         </tbody>
+                        {{-- <tbody id="service_table">
+                          
+                        </tbody> --}}
                     </table>  
                   </div>
                   <!-- /.card-body -->
                 </div>
-    
+     
               </section>
             </div>
             <!-- /.row (main row) -->
@@ -80,3 +74,11 @@
         <!-- /.content -->
     </div>
 @endsection
+
+{{-- @section('script')
+    
+    <script type="text/javascript">
+      getServicesData();
+    </script>
+
+@endsection --}}

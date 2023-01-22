@@ -123,7 +123,8 @@
             </script>
         @endif
     
-    
+        {{-- @yield('script')     --}}
+
         @include('Layout.footer')
 
       

@@ -14,4 +14,8 @@ class ServiceController extends Controller
             'ServicesData'=>$ServicesData
         ]);
     }
+    function getServicesData(){
+         $result = json_encode(ServicesModel::all());
+         return $result;
+    }
 }
