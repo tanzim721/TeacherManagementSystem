@@ -52,13 +52,13 @@
                                 <td>{{$services->service_name}}</td>
                                 <td>{{$services->service_des}}</td>
                                 <td><a href="#" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> </td>
-                                <td><a href="#" class="btn btn-sm btn-danger" title="delete"><i class="fa fa-trash"></i></a> </td>
+                                <td><a href="#" class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></a> </td>
                             </tr>
                             @endforeach
                         </tbody>
-                        <tbody id="service_tables">
+                        {{-- <tbody id="service_tables">
                           
-                        </tbody>
+                        </tbody> --}}
                     </table>  
                   </div>
                   <!-- /.card-body -->
@@ -73,10 +73,10 @@
     </div>
 @endsection
 
-@section('script')
+{{-- @section('script')
     
     <script type="text/javascript">
       getServicesData();
     </script>
 
-@endsection
+@endsection --}}

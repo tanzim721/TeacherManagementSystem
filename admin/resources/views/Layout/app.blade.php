@@ -7,9 +7,9 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
-    <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+    {{-- <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/mdb.rtl.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/mdb.dark.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.dark.min.css')}}"> --}}
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=san">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -124,7 +124,7 @@
             </script>
         @endif
     
-        @yield('script')    
+        {{-- @yield('script')     --}}
 
         @include('Layout.footer')
 
