@@ -16,7 +16,7 @@ function getServicesData(){
                     "<td> "+jsonData[i].service_des+" </td>"+
                     "<td> <a href='' class='btn btn-sm btn-primary' title='Edit'><i class='fa fa-edit'></i></a> </td>"+
                     "<td> <a href='' class='btn btn-sm btn-danger' title='Delete'><i class='fa fa-trash'></i></a> </td>"
-            ).append('#service_table');
+            ).append('#service_tables');
         });
     })
     .catch(function(error){

@@ -56,9 +56,9 @@
                             </tr>
                             @endforeach
                         </tbody>
-                        {{-- <tbody id="service_table">
+                        <tbody id="service_tables">
                           
-                        </tbody> --}}
+                        </tbody>
                     </table>  
                   </div>
                   <!-- /.card-body -->
@@ -73,10 +73,10 @@
     </div>
 @endsection
 
-{{-- @section('script')
+@section('script')
     
     <script type="text/javascript">
       getServicesData();
     </script>
 
-@endsection --}}
+@endsection
