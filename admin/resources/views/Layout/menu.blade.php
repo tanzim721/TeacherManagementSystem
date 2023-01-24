@@ -22,7 +22,7 @@
             </a>
         </li> 
         <li class="nav-item">
-            <a href="{{asset('/visitor')}}" class="nav-link"> 
+            <a href="{{route('visitor')}}" class="nav-link"> 
                 <i class="nav-icon fas fa-users"></i> 
                 <p> Visitor
                     <i class="fas fa-angle-left right"></i>
@@ -30,7 +30,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{asset('/service')}}" class="nav-link"> 
+            <a href="{{route('service')}}" class="nav-link"> 
                 <i class="nav-icon fas fa-globe"></i> 
                 <p> Service
                     <i class="fas fa-angle-left right"></i>

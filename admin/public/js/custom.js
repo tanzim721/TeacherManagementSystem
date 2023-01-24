@@ -23,3 +23,7 @@ function getServicesData(){
 
     });
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
