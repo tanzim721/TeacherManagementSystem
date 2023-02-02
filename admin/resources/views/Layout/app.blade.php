@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="{{asset('backend/')}}/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="{{asset('backend/')}}/plugins/summernote/summernote-bs4.min.css">
+
+    {{-- for time and date 02-02-2023  --}}
+    <link rel="stylesheet" href="{{asset('backend/')}}/plugins/summernote/bootstrap-datetimepicker.min.css">
+
     <!-- jQuery -->
     <style type="text/css">
         .notifyjs-corner{
@@ -155,6 +159,12 @@
     <script>
       $.widget.bridge('uibutton', $.ui.button)
     </script>
+
+    {{-- for time and date 02-02-2023  --}}
+    <script src="{{asset('backend/')}}/plugins/jquery-validation/bootstrap-datetimepicker.min.js"></script>
+    <script src="{{asset('backend/')}}/plugins/jquery-validation/moment.min.js"></script>
+    
+    
     <!-- Bootstrap 4 -->
     <script src="{{asset('backend/')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- ChartJS -->

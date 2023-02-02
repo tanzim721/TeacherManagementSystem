@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@HomeIndex');
 
 Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
+// Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
+

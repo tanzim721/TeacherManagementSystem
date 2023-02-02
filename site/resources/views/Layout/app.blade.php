@@ -33,6 +33,10 @@
     <!-- summernote -->
     <link rel="stylesheet" href="{{asset('backend/')}}/plugins/summernote/summernote-bs4.min.css">
     <!-- jQuery -->
+
+    {{-- for time and date 02-02-2023 --}}
+    <link rel="stylesheet" href="{{asset('backend/')}}/plugins/summernote/bootstrap-datetimepicker.min.css">
+    
 </head>
 <body class="fix-header fix-siebar">
     
@@ -94,6 +98,11 @@
     <!-- jquery-validation -->
     <script src="{{asset('backend/')}}/plugins/jquery-validation/jquery.validate.min.js"></script>
     <script src="{{asset('backend/')}}/plugins/jquery-validation/additional-methods.min.js"></script>
+
+    {{-- for time and date 02-02-2023 --}}
+    <script src="{{asset('backend/')}}/plugins/jquery-validation/bootstrap-datetimepicker.min.js"></script>
+    <script src="{{asset('backend/')}}/plugins/jquery-validation/moment.min.js"></script>
+
     <script src="{{asset('js/custom.js')}}"></script>
 </body>
 </html>
