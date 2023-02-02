@@ -13,7 +13,7 @@ class ServiceController extends Controller
         return view('Services', ['ServicesData'=>$ServicesData]);
     }
     function ServiceDelete(Request $request){
-        $id = $request->input('id');
+        $id = $request->input('id'); 
         $result = ServicesModel::where('id','=',$id)->delete();
         if($result==true){
             return "Data Delete successfully.";

@@ -8,8 +8,11 @@ use App\GalleryModel;
 
 class GalleryController extends Controller
 {
-    function GalleryIndex(){
-        $GalleryData = GalleryModel::all();
-        return view('Gallery.view', ['GalleryData'=>$GalleryData]);
+    public function GalleryIndex(){
+        $data['allData'] = GalleryModel::all();
+        return view('Gallery.view', $data);
+    }
+    public function GallerAdd(){
+        return 'ok';
     }
 }

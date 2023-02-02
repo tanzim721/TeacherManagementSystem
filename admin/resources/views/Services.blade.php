@@ -31,10 +31,14 @@
               <!-- Left col -->
               <section class="col-md-12 connectedSortable">
                 <!-- Custom tabs (Charts with tabs)-->
-                <div class="card">        
+                <div class="card">      
+                  <div class="card-header">
+                    Service List
+                    <a class="btn btn-success float-right btn-sm" href="{{route('gallery.add')}}"><i class="fa fa-plus-circle"></i> Add Service</a>
+                  </div><!-- /.card-header -->  
                   <div class="card-body">
-                    {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
-                    <table id="example1" class="table table-bordered table-hover text-center">
+                    <table id="VisitorDt" class="table table-bordered table-hover text-center">
+                    {{-- <table id="example1" class="table table-bordered table-hover text-center"> --}}
                     {{-- <table id="example2" class="table table-bordered table-hover text-center"> --}}
                         <thead>
                             <tr>

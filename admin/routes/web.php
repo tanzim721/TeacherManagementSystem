@@ -20,17 +20,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@HomeIndex');
 Route::get('/visitor', 'VisitorController@VisitorIndex')->name('visitor');
 
-Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
-Route::post('/serviceDelete', 'ServiceController@ServiceDelete')->name('service.delete');
-
-
+    Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
+    Route::get('/service/add', 'ServiceController@ServiceIndex')->name('service.add');
+    Route::post('/service/delete', 'ServiceController@ServiceDelete')->name('service.delete');
 Route::get('/getServicesData', 'ServiceController@getServicesData');
 
 
-Route::prefix('gallery')->group(function(){
-    Route::get('/view', 'GalleryController@GalleryIndex')->name('gallery.view');
-    Route::get('/add', 'GalleryController@GallerAdd')->name('gallery.add');
+    Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
+    Route::get('/gallery/add', 'GalleryController@GallerAdd')->name('gallery.add');
     
-});
 
 
