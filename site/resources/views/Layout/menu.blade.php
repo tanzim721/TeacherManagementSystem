@@ -6,18 +6,21 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav col-lg-11">
             <li class="nav-item ">
-                <a class="nav-link" href="{{url('/')}}">HOME</a>
+                <a class="nav-link text-bold" href="{{url('/')}}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url('/')}}">PHOTO</a>
+                <a class="nav-link text-bold" href="{{url('/')}}">PHOTO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url('/')}}">SERVICES</a>
+                <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url('/')}}">NOTICES</a>
+                <a class="nav-link text-bold" href="{{url('/')}}">NOTICES</a>
             </li>
-        </ul>
+            <li class="nav-item">
+                <a class="nav-link text-bold" href="{{url('/')}}">CONTACT US</a>
+            </li>
+        </ul> 
         <div class="text-aline:right col-lg-1">
             <a href="#"><button class="btn btn-info btn-outline-black my-2 my-sm-0 " type="submit">LOGIN</button></a>
         </div>

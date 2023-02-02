@@ -1,4 +1,5 @@
 <div class="container">
+    <h2 class="text-center p-2 text-bold">@yield('page_name')</h2>
     <div class="row ">
         @foreach($ServicesData as $key => $services)
         <div class="col-md-3 width-100% p-2">

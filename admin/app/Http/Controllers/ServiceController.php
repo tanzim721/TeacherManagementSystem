@@ -10,9 +10,7 @@ class ServiceController extends Controller
 {
     function ServiceIndex(){
         $ServicesData = ServicesModel::all();
-        return view('Services', [
-            'ServicesData'=>$ServicesData
-        ]);
+        return view('Services', ['ServicesData'=>$ServicesData]);
     }
     function ServiceDelete(Request $request){
         $id = $request->input('id');
@@ -24,6 +22,8 @@ class ServiceController extends Controller
             return "Data Delete failed!";
         }
     }
+
+
     function getServicesData(){
          $result = json_encode(ServicesModel::all());
          return $result;

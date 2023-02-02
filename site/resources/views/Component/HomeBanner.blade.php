@@ -27,6 +27,7 @@
 
 
 <div class="container-fluid jumbotron m-1 bg-white">
+    <h2 class="text-center pb-5 px-2 text-bold">@yield('page_name')</h2>
     <div class="row">
         <div class="col-md-6">
             <img src="{{asset('images/banner.webp')}}" alt="" class="d-block w-100 banner">
