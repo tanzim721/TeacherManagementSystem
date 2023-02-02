@@ -37,6 +37,14 @@
                 </p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{route('gallery.view')}}" class="nav-link"> 
+                <i class="nav-icon fa fa-file-image" aria-hidden="true"></i> 
+                <p> Gallery
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+        </li>
         
     </ul>
 </nav>

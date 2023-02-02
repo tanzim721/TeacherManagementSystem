@@ -16,9 +16,7 @@ class HomeController extends Controller
         VisitorModel::insert(['ip_address'=>$UserIP, 'visit_time'=>$timeData]);
 
         $ServicesData = ServicesModel::all();
-        return view('Home', [
-            'ServicesData'=>$ServicesData
-        ]);
+        return view('Home', ['ServicesData'=>$ServicesData]);
     }
 }
 

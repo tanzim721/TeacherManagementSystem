@@ -27,4 +27,10 @@ Route::post('/serviceDelete', 'ServiceController@ServiceDelete')->name('service.
 Route::get('/getServicesData', 'ServiceController@getServicesData');
 
 
+Route::prefix('gallery')->group(function(){
+    Route::get('/view', 'GalleryController@GalleryIndex')->name('gallery.view');
+    Route::get('/add', 'GalleryController@GallerAdd')->name('gallery.add');
+    
+});
+
 

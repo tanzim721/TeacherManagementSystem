@@ -9,7 +9,7 @@
                 <a class="nav-link text-bold" href="{{url('/')}}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-bold" href="{{url('/')}}">PHOTO</a>
+                <a class="nav-link text-bold" href="{{route('gallery.view')}}">PHOTO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a>

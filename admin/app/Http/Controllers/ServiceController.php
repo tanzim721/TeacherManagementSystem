@@ -19,7 +19,7 @@ class ServiceController extends Controller
             return "Data Delete successfully.";
         }
         else{
-            return "Data Delete failed!";
+            return "Data Delete failed!"; 
         }
     }
 
