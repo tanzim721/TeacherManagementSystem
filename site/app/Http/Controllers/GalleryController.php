@@ -12,8 +12,9 @@ class GalleryController extends Controller
 {
     function GalleryIndex(){
         $GalleryData = GalleryModel::all();
-        return view('Gallery', ['GalleryData'=>$GalleryData]);
+        return view('Component.HomeGallery', ['GalleryData'=>$GalleryData]);
     }
 }
+
 
 

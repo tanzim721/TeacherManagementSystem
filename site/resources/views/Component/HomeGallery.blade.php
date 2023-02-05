@@ -12,7 +12,7 @@
                     {{-- <time class="entry-data published" datetime=""><p>{{  now()->toDateTimeString() }}</p></time> --}}
                     <a href="#" class="btn btn-primary">Go Details</a>
                 </div>      
-            </div>
+            </div> 
         </div>
         {{-- @endforeach --}}
     </div>
