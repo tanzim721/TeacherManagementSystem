@@ -13,7 +13,7 @@
                     <a href="#" class="btn btn-primary">Go Details</a>
                 </div>      
             </div> 
-        </div>
+        </div> 
         {{-- @endforeach --}}
     </div>
 </div>

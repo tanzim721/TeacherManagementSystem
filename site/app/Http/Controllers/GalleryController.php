@@ -11,8 +11,8 @@ use App\GalleryModel;
 class GalleryController extends Controller
 {
     function GalleryIndex(){
-        $GalleryData = GalleryModel::all();
-        return view('Component.HomeGallery', ['GalleryData'=>$GalleryData]);
+        $data['allData'] = GalleryModel::all();
+        return view('Component.HomeGallery', $data);
     }
 }
 
