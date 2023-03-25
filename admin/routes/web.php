@@ -26,8 +26,8 @@ Route::get('/visitor', 'VisitorController@VisitorIndex')->name('visitor');
 Route::get('/getServicesData', 'ServiceController@getServicesData');
 
 
-    Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
-    Route::get('/gallery/add', 'GalleryController@GallerAdd')->name('gallery.add');
+Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
+Route::get('/gallery/add', 'GalleryController@GallerAdd')->name('gallery.add');
     
 
 

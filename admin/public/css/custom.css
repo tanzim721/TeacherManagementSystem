@@ -20,3 +20,9 @@ body{
 .bannerText{
     margin-top: 150px;
 }
+.loding-icon{
+    width: 250px;
+    height: 200px;
+    background-color: none;
+    
+}

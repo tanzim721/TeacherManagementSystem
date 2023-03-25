@@ -5,7 +5,7 @@
     @section('page_name', 'Gallery')
     {{-- @include('Component.HomeBanner') --}}
     {{-- @include('Component.HomeService') --}}
-    @include('Component.HomeGallery')
+    @include('Gallery.view')
 
 
 @endsection

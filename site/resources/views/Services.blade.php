@@ -4,7 +4,7 @@
 @section('content')
     @section('page_name', 'Services')
     {{-- @include('Component.HomeBanner') --}}
-    @include('Component.HomeService')
+    @include('Service.view')
 
 @endsection
 

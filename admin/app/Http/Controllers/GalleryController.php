@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\VisitorModel;
+use App\ServicesModel;
 use App\GalleryModel;
 
 
 class GalleryController extends Controller
 {
-    public function GalleryIndex(){
-        $data['allData'] = GalleryModel::all();
-        return view('Gallery.view', $data);
+    function GalleryIndex(){
+        $dataGallery = GalleryModel::all();
+        return view('Gallery', [ 'dataGallery' =>$dataGallery]);
     }
     public function GallerAdd(){
         return 'ok';
