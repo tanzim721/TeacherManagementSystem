@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class GalleryModel extends Model
 {
-    public $table='services';
+    public $table='gallery';
     public $primaryKey='id';
     public $incrementing=true;
     public $keyType='int';

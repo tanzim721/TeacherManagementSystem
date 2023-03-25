@@ -45,7 +45,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="service_table">
-                                    {{-- @foreach($dataGallery as $key => $gallery)
+                                    @foreach($dataGallery as $key => $gallery)
                                     <tr>
                                         <td>{{$key+1}}.</td>
                                         <td>{{$gallery->gallery_name}}</td>
@@ -56,22 +56,12 @@
                                             <a href="" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
-                                    @endforeach  --}}
-                                    @foreach($dataGallery as $key => $gallery)
-                                        <td>{{$key+1}}.</td>
-                                        <td><h5 class="card-title">{{$gallery->gallery_name}}</h5></td>
-                                            <img style="width: 100%; height:200px" class="card-img-top" src="{{$gallery->gallery_img}}" alt="Card image cap">
-                                            <div class="card-body">
-                                                <br>
-                                                <a href="#" class="btn btn-primary">Go Details</a>
-                                            </div>      
-                                    @endforeach
+                                    @endforeach 
                                 </tbody>
                             </table>  
                         </div>
                     <!-- /.card-body -->
                     </div>
-
                 </section>
             </div>
             <!-- /.row (main row) -->
