@@ -15,6 +15,6 @@ class GalleryController extends Controller
         return view('Gallery', [ 'dataGallery' =>$dataGallery]);
     }
     public function GallerAdd(){
-        return 'ok'; 
+        return view('Gallery.add');
     }
 }
