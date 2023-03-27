@@ -37,11 +37,11 @@
                             {{-- <table id="example2" class="table table-bordered table-hover"> --}}
                                 <thead>
                                     <tr>
-                                    <th>SN.</th> 
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Image</th>
-                                    <th>Action</th>
+                                        <th>SN.</th> 
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Image</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody id="service_table">
@@ -52,7 +52,7 @@
                                         <td>{{$gallery->gallery_des}}</td>
                                         <td><img style="width: 50px; height:50px" class="card-img-top" src="{{$gallery->gallery_img}}" alt="Card image cap"></td>
                                         <td>
-                                            <a href="" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
+                                            <a href="{{route('gallery.edit', $gallery->id)}}" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
                                             <a href="" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>

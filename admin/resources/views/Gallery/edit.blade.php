@@ -36,28 +36,22 @@
                 <!-- Custom tabs (Charts with tabs)-->
                 <div class="card">
                   <div class="card-header">
-                    <h4>
-                      @if(isset($editData))
-                        Edit Image
-                      @else
-                        Add Student
-                      @endif
-                    </h4>
+                    <h4>Add Image</h4>
                     <a class="btn btn-success float-right btn-sm" href="{{route('gallery.view')}}"><i class="fa fa-list"></i> View List</a>
                 </div><!-- /.card-header -->
                 <div class="card-body">
-                    <form method="POST" action="{{(@$editData)?route('gallery.update', $editData->id):route('gallery.store')}}" id="myForm">
+                    <form method="POST" action="{{route('gallery.store')}}" id="myForm">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
                                 <label for="name" >Image Name</label>
                                 <input type="text" name="name" class="form-control">
-                                <font style="color:red">{{($errors->has('name'))?($errors->first('name')):''}}</font>
+                                <font style="color:red">{{($errors->has('gallery_name'))?($errors->first('gallery_name')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="description">Description</label>
                                 <input type="description" name="description" class="form-control">
-                                <font style="color:red">{{($errors->has('description'))?($errors->first('description')):''}}</font>
+                                <font style="color:red">{{($errors->has('gallery_des'))?($errors->first('gallery_des')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="password">Image</label>
@@ -65,7 +59,7 @@
                             </div>
                            
                             <div class="form-group col-md-6">
-                              <button type="submit" class="btn btn-primary">{{(@$editData)?'Update':'Submit'}}</button>
+                                <input type="Submit" name="" value="submit" class="btn btn-primary">
                             </div>
                         </div>
                     </form>          

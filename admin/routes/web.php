@@ -25,9 +25,14 @@ Route::get('/visitor', 'VisitorController@VisitorIndex')->name('visitor');
     Route::post('/service/delete', 'ServiceController@ServiceDelete')->name('service.delete');
 Route::get('/getServicesData', 'ServiceController@getServicesData');
 
-
+//Gallery................
 Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
-Route::get('/gallery/add', 'GalleryController@GallerAdd')->name('gallery.add');
+Route::get('/gallery/add', 'GalleryController@GalleryAdd')->name('gallery.add');
+Route::post('/gallery/store', 'GalleryController@GalleryStore')->name('gallery.store');
+Route::get('/gallery/edit/{id}', 'GalleryController@GalleryEdit')->name('gallery.edit');
+Route::post('/gallery/update/{id}', 'GalleryController@GalleryUpdate')->name('gallery.update');
+Route::post('/gallery/delete/{id}', 'GalleryController@GalleryDelete')->name('gallery.delete');
+
+
+
     
-
-
