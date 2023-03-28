@@ -2,5 +2,3 @@
 
 @section('title', 'HOME')
 
-
-

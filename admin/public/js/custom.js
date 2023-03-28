@@ -43,3 +43,10 @@ function getServicesData(){
 // $(function () {
 //     $('[data-toggle="tooltip"]').tooltip();
 // });
+
+
+// Treeview Initialization
+// $(document).ready(function() {
+//     $('.treeview').mdbTreeview();
+//   });
+
