@@ -15,8 +15,12 @@ class CreateTeachersListsTable extends Migration
     {
         Schema::create('teachers_lists', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->unique();
-            
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('gender')->nullable();
+            $table->string('dateOfBirth')->nullable();
+            $table->timestamps();
         });
     }
 
