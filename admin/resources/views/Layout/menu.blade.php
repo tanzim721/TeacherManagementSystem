@@ -44,22 +44,15 @@
                 </p>
             </a>
         </li>
-        <li class="nav-item has-treeview">
-            <a href="" class="nav-link"> 
-                <i class="nav-icon fa fa-file-image" aria-hidden="true"></i> 
-                <p> Gallery
+        <li class="nav-item">
+            <a href="{{route('teachers.view')}}" class="nav-link"> 
+                <i class="nav-icon fa fa-user" aria-hidden="true"></i> 
+                <p> Teachers
                     <i class="fas fa-angle-left right"></i>
                 </p>
             </a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <i class="nav-icon far fa-circle"></i>
-                        <p>View</p>
-                    </a>
-                </li>
-            </ul>
         </li>
+        
 
         
         {{-- <li><i class="fas fa-angle-right rotate"></i>

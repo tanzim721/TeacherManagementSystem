@@ -33,6 +33,9 @@ Route::get('/gallery/edit/{id}', 'GalleryController@GalleryEdit')->name('gallery
 Route::post('/gallery/update/{id}', 'GalleryController@GalleryUpdate')->name('gallery.update');
 Route::post('/gallery/delete/{id}', 'GalleryController@GalleryDelete')->name('gallery.delete');
 
+//Teachers List.................
+Route::get('/teachers', 'TeachersController@Index')->name('teachers.view');
+Route::get('/teachers/add', 'TeachersController@Add')->name('teachers.add');
 
 
     
