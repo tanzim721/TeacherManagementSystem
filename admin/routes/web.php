@@ -36,6 +36,10 @@ Route::post('/gallery/delete/{id}', 'GalleryController@GalleryDelete')->name('ga
 //Teachers List.................
 Route::get('/teachers', 'TeachersController@Index')->name('teachers.view');
 Route::get('/teachers/add', 'TeachersController@Add')->name('teachers.add');
+Route::post('/teachers/store', 'TeachersController@Store')->name('teachers.store');
+Route::get('/teachers/edit/{id}', 'TeachersController@Edit')->name('teachers.edit');
+Route::post('/teachers/update/{id}', 'TeachersController@Update')->name('teachers.update');
+Route::post('/teachers/delete/{id}', 'TeachersController@Delete')->name('teachers.delete');
 
 
     

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\VisitorModel;
 use App\ServicesModel;
+use DB;
 
 class ServiceController extends Controller
 {

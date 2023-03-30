@@ -3,18 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\TeachersList;
+use App\VisitorModel;
+use App\ServicesModel;
+use App\GalleryModel;
+use App\TeachersList;
 use DB;
 
 
 class TeachersController extends Controller
 {
     function Index(){
-        $dataGallery = TeachersList::all();
-        return view('Teachers', [ 'dataGallery' =>$dataGallery]);
+        // dd('ok');
+        $dataData = TeachersList::all();
+        return view('Teachers', [ 'dataData' =>$dataData]);
     }
-    public function GalleryAdd(){
-        return view('Gallery.add');
+    public function Add(){
+        return view('Teachers.add');
     }
     public function GalleryStore(Request $request){
         $this->validate($request, [

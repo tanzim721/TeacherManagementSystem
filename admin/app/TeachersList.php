@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class TeachersList extends Model
 {
     
+    public $table='teachers_lists';
+    public $primaryKey='id';
+    public $incrementing=true;
+    public $keyType='int';
+    public $timestamps=false;
 
 }
