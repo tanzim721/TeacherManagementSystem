@@ -56,10 +56,10 @@
                                         <td>{{$teachers->phone}}</td>
                                         <td>{{$teachers->gender}}</td>
                                         <td>{{$teachers->dateOfBirth}}</td>
-                                        <td><img style="width: 50px; height:50px" class="card-img-top" src="{{$teachers->teachers_img}}" alt="Card image cap"></td>
+                                        <td><img style="width: 45px; height:45px" class="card-img-top" src="{{$teachers->image}}" alt="Card image cap"></td>
                                         <td>
-                                            <a href="{{route('teachers.edit', $teachers->id)}}" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
-                                            <a href="" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
+                                            <a href="{{route('teachers.edit', $teachers->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
+                                            <a href="{{route('teachers.delete',$teachers->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
                                     @endforeach 

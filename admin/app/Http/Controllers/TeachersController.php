@@ -43,9 +43,12 @@ class TeachersController extends Controller
     }
     public function Update(Request $request, $id){
         $data = TeachersList::find($id);
-        $data->name = $request->name;
+        $data->name = $request->name;   
         $data->email = $request->email;
-        $data->teachers_img = $request->teachers_img;
+        $data->phone = $request->phone;
+        $data->gender = $request->gender;
+        $data->dateOfBirth = $request->dateOfBirth;
+        $data->image = $request->image;
         $data->save();
         return redirect()->route('teachers.view')->with('success','Data Update Successfully');
     }
