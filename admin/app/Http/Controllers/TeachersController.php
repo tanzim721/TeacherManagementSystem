@@ -14,34 +14,39 @@ class TeachersController extends Controller
 {
     function Index(){
         // dd('ok');
-        $dataData = TeachersList::all();
-        return view('Teachers', [ 'dataData' =>$dataData]);
+        $allData = TeachersList::all();
+        return view('Teachers', [ 'allData' =>$allData]);
     }
     public function Add(){
         return view('Teachers.add');
     }
-    public function GalleryStore(Request $request){
+    public function Store(Request $request){
+        // dd('ok');
         $this->validate($request, [
-            'gallery_name' => 'required',
-            'gallery_image' => 'required|unique:gallery,gallery_image'
+            'name' => 'required',
+            'image' => 'required',
+            'email' => 'required|unique:teachers_lists,email'
         ]);
-        $data = new GalleryModel();
-        $data->gallery_name = $request->gallery_name;
-        $data->gallery_des = $request->gallery_des;
-        $data->gallery_img = $request->gallery_img;
+        $data = new TeachersList();
+        $data->name = $request->name;
+        $data->email = $request->email;
+        $data->phone = $request->phone;
+        $data->gender = $request->gender;
+        $data->dateOfBirth = $request->dateOfBirth;
+        $data->image = $request->image;
         $data->save();
-        return redirect()->route('gallery.view')->with('success', 'Data Inserted Successfully');
+        return redirect()->route('teachers.view')->with('success', 'Data Inserted Successfully');
     }
-    public function GalleryEdit($id){
-        $editData = GalleryModel::find($id);
-        return view('Gallery.edit', compact('editData'));
+    public function Edit($id){
+        $editData = TeachersList::find($id);
+        return view('Teachers.edit', compact('editData'));
     }
-    public function GalleryUpdate(Request $request, $id){
-        $data = GalleryModel::find($id);
-        $data->gallery_name = $request->gallery_name;
-        $data->gallery_des = $request->gallery_des;
-        $data->gallery_img = $request->gallery_img;
+    public function Update(Request $request, $id){
+        $data = TeachersList::find($id);
+        $data->name = $request->name;
+        $data->email = $request->email;
+        $data->teachers_img = $request->teachers_img;
         $data->save();
-        return redirect()->route('gallery.view')->with('success','Data Update Successfully');
+        return redirect()->route('teachers.view')->with('success','Data Update Successfully');
     }
 }

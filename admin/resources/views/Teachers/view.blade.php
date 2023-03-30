@@ -28,7 +28,7 @@
                     <!-- Custom tabs (Charts with tabs)-->
                     <div class="card">
                         <div class="card-header">
-                            <h4>Picture List</h4>
+                            <h4 class="text-bold">Teachers List</h4>
                             <a class="btn btn-success float-right btn-sm" href="{{route('teachers.add')}}"><i class="fa fa-plus-circle"></i> Add Teachers</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">
@@ -48,18 +48,21 @@
                                     </tr>
                                 </thead>
                                 <tbody id="service_table">
-                                    {{-- @foreach($dataData as $key => $gallery)
+                                    @foreach($allData as $key => $teachers)
                                     <tr>
                                         <td>{{$key+1}}.</td>
-                                        <td>{{$gallery->gallery_name}}</td>
-                                        <td>{{$gallery->gallery_des}}</td>
-                                        <td><img style="width: 50px; height:50px" class="card-img-top" src="{{$gallery->gallery_img}}" alt="Card image cap"></td>
+                                        <td>{{$teachers->name}}</td>
+                                        <td>{{$teachers->email}}</td>
+                                        <td>{{$teachers->phone}}</td>
+                                        <td>{{$teachers->gender}}</td>
+                                        <td>{{$teachers->dateOfBirth}}</td>
+                                        <td><img style="width: 50px; height:50px" class="card-img-top" src="{{$teachers->teachers_img}}" alt="Card image cap"></td>
                                         <td>
-                                            <a href="{{route('gallery.edit', $gallery->id)}}" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
+                                            <a href="{{route('teachers.edit', $teachers->id)}}" class="btn btn-sam btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
                                             <a href="" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
-                                    @endforeach  --}}
+                                    @endforeach 
                                 </tbody>
                             </table>  
                         </div>

@@ -36,8 +36,8 @@
                 <!-- Custom tabs (Charts with tabs)-->
                 <div class="card">
                   <div class="card-header">
-                    <h4>
-                      @if(isset($editData))
+                    <h4 class="text-bold">
+                      @if(isset($allData))
                         Edit Teachers
                       @else
                         Add Teachers
@@ -46,7 +46,7 @@
                     <a class="btn btn-success float-right btn-sm" href="{{route('teachers.view')}}"><i class="fa fa-list"></i> View List</a>
                 </div><!-- /.card-header -->
                 <div class="card-body">
-                    <form method="POST" action="{{(@$editData)?route('teachers.update', $editData->id):route('teachers.store')}}" id="myForm">
+                    <form method="POST" action="{{(@$allData)?route('teachers.update', $allData->id):route('teachers.store')}}" id="myForm">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
@@ -72,14 +72,18 @@
                                   <option value="Female">Female</option>
                                   <option value="Other">Other</option>
                                 </select>
-                              </div>
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="name" >Date of Birth</label>
+                                <input type="Date" name="dateOfBirth" class="form-control" placeholder="">
+                                <font style="color:red">{{($errors->has('dateOfBirth'))?($errors->first('dateOfBirth')):''}}</font>
+                            </div>
                             <div class="form-group col-md-4">
                                 <label for="image">Image</label>
                                 <input type="file" name="image" class="form-control">
                             </div>
-                           
                             <div class="form-group col-md-6">
-                              <button type="submit" class="btn btn-primary">{{(@$editData)?'Update':'Submit'}}</button>
+                              <button type="submit" class="btn btn-primary">{{(@$allData)?'Update':'Submit'}}</button>
                             </div>
                         </div>
                     </form>          
