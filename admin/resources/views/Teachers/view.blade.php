@@ -32,9 +32,9 @@
                             <a class="btn btn-success float-right btn-sm" href="{{route('teachers.add')}}"><i class="fa fa-plus-circle"></i> Add Teachers</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">
-                            <table id="VisitorDt" class="table table-bordered table-hover text-center">
+                            {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
                             {{-- <table id="example1" class="table table-bordered table-hover"> --}}
-                            {{-- <table id="example2" class="table table-bordered table-hover"> --}}
+                            <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th>SN.</th> 

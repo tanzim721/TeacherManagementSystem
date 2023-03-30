@@ -45,14 +45,7 @@
                     <form method="POST" action="{{route('teachers.update',$editData->id)}}" id="myForm">
                       @csrf
                       <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label for="usertype">User Role</label>
-                          <select name="usertype" id="usertype" class="form-control">
-                            <option value="">Select Role</option>
-                            <option value="Admin" {{($editData->usertype=="Admin")?"selected":""}}>Admin</option>
-                            <option value="User" {{($editData->usertype=="User")?"selected":""}}>User</option>
-                          </select>
-                        </div>
+                        
                         <div class="form-group col-md-4">
                           <label for="name" >Name</label>
                           <input type="text" value="{{$editData->name}}" name="name" class="form-control">
@@ -63,7 +56,30 @@
                           <input type="email" value="{{$editData->email}}" name="email" class="form-control">
                           <font style="color:red">{{($errors->has('email'))?($errors->first('email')):''}}</font>
                         </div>
-                       
+                        <div class="form-group col-md-4">
+                          <label for="phone">Phone</label>
+                          <input type="text" value="{{$editData->phone}}" name="phone" class="form-control">
+                          <font style="color:red">{{($errors->has('phone'))?($errors->first('phone')):''}}</font>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="gendertype">User Role</label>
+                          <select name="gendertype" id="gendertype" class="form-control">
+                            <option value="">Select Gender</option>
+                            <option value="Male" {{($editData->gendertype=="Male")?"selected":""}}>Male</option>
+                            <option value="Female" {{($editData->gendertype=="Female")?"selected":""}}>Female</option>
+                            <option value="Other" {{($editData->gendertype=="Other")?"selected":""}}>Other</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="date">Date of Birth</label>
+                          <input type="date" value="{{$editData->dateOfBirth}}" name="dateOfBirth" class="form-control">
+                          <font style="color:red">{{($errors->has('dateOfBirth'))?($errors->first('dateOfBirth')):''}}</font>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="image">Image</label>
+                          <input type="file" value="{{$editData->image}}" name="image" class="form-control">
+                          <font style="color:red">{{($errors->has('image'))?($errors->first('image')):''}}</font>
+                        </div>
                         <div class="form-group col-md-6">
                           <input type="submit" name="" value="update" class="btn btn-primary">
                         </div>
