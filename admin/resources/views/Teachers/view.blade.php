@@ -29,6 +29,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="text-bold">Teachers List</h4>
+                            Ekhane duita problem: 1.delete kaj korteche na 2.image save hocche na....
                             <a class="btn btn-success float-right btn-sm" href="{{route('teachers.add')}}"><i class="fa fa-plus-circle"></i> Add Teachers</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">
@@ -42,7 +43,7 @@
                                         <th>Email</th>
                                         <th>Phone</th>
                                         {{-- <th>Gender</th> --}}
-                                        <th>Date of Birth</th>
+                                        {{-- <th>Date of Birth</th> --}}
                                         <th>Image</th>
                                         <th>Action</th>
                                     </tr>
@@ -55,11 +56,11 @@
                                         <td>{{$teachers->email}}</td>
                                         <td>{{$teachers->phone}}</td>
                                         {{-- <td>{{$teachers->gender}}</td> --}}
-                                        <td>{{$teachers->dateOfBirth}}</td>
+                                        {{-- <td>{{$teachers->dateOfBirth}}</td> --}}
                                         <td><img style="width: 45px; height:45px" class="card-img-top" src="{{$teachers->image}}" alt=""></td>
                                         <td>
                                             <a href="{{route('teachers.edit', $teachers->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
-                                            <a href="{{route('teachers.delete',$teachers->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
+                                            <a href="{{route('teachers.delete', $teachers->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
                                     @endforeach 

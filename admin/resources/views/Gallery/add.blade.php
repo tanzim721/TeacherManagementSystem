@@ -63,7 +63,7 @@
                                 <label for="password">Image</label>
                                 <input type="file" name="image" class="form-control">
                             </div>
-                           
+                            <br>
                             <div class="form-group col-md-6">
                               <button type="submit" class="btn btn-primary">{{(@$editData)?'Update':'Submit'}}</button>
                             </div>

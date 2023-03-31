@@ -4,8 +4,6 @@
 
 @section('content')
     @section('page_name', 'Teachers')
-    
-
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
@@ -37,7 +35,7 @@
                 <!-- Custom tabs (Charts with tabs)-->
                 <div class="card">
                   <div class="card-header">
-                    <h4 class="text-center">Edit Teachers Details</h4>
+                    <h4 class="text-bold">Edit Teachers Details</h4>
                     <a class="btn btn-success float-right btn-sm" href="{{route('teachers.view')}}"><i class="fa fa-list"></i> View List</a>
                     
                   </div><!-- /.card-header -->
@@ -69,17 +67,18 @@
                             <option value="Other" {{($editData->gendertype=="Other")?"selected":""}}>Other</option>
                           </select>
                         </div> --}}
-                        <div class="form-group col-md-4">
+                        {{-- <div class="form-group col-md-4">
                           <label for="date">Date of Birth</label>
                           <input type="date" value="{{$editData->dateOfBirth}}" name="dateOfBirth" class="form-control">
                           <font style="color:red">{{($errors->has('dateOfBirth'))?($errors->first('dateOfBirth')):''}}</font>
-                        </div>
+                        </div> --}}
                         <div class="form-group col-md-4">
                           <label for="image">Image</label>
                           <input type="file" value="{{$editData->image}}" name="image" class="form-control">
                           <font style="color:red">{{($errors->has('image'))?($errors->first('image')):''}}</font>
                         </div>
-                        <div class="form-group col-md-6">
+                        <br>
+                        <div class="form-group col-md-12">
                           <input type="submit" name="" value="Update" class="btn btn-primary">
                         </div>
                       </div>
@@ -96,5 +95,54 @@
         <!-- /.content -->
       </div>
 
+    <script type="text/javascript">
+        $(function () {
+        $.validator.setDefaults({
+            submitHandler: function () {
+                alert( "Form successful submitted!" );
+            }
+        });
+        $('#myForm').validate({
+        rules: {
+                name: {
+                required: true,
+                },
+                email: {
+                required: true,
+                email: true,
+                },
+                phone : {
+                required : true;
+                minlength : 11
+                }
+                
+            },
+            messages: {
+                name: {
+                required: "Please enter username",
+                }
+                email: {
+                required: "Please enter a email address",
+                email: "Please enter a valid email address"
+                },
+                phone: {
+                required: "Please enter phone nummber",
+                minlength: "Phone will be minimum 11 numbers"
+                }   
+            },
+            errorElement: 'span',
+            errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            }
+            });
+        });
+    </script>
     
 @endsection

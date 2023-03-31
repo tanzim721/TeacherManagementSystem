@@ -73,11 +73,11 @@
                                   <option value="Other">Other</option>
                                 </select>
                             </div> --}}
-                            <div class="form-group col-4">
+                            {{-- <div class="form-group col-4">
                                 <label for="name" >Date of Birth</label>
                                 <input type="Date" name="dateOfBirth" class="form-control" placeholder="">
                                 <font style="color:red">{{($errors->has('dateOfBirth'))?($errors->first('dateOfBirth')):''}}</font>
-                            </div>
+                            </div> --}}
                             <div class="form-group col-md-4">
                                 <label for="image">Image</label>
                                 <input type="file" name="image" class="form-control">
@@ -98,5 +98,54 @@
         </section>
         <!-- /.content -->
       </div> 
+
+    <script type="text/javascript">
+      $(function () {
+      $.validator.setDefaults({
+          submitHandler: function () {
+              alert( "Form successful submitted!" );
+          }
+      });
+      $('#myForm').validate({
+      rules: {
+              name: {
+              required: true,
+              },
+              email: {
+              required: true,
+              email: true,
+              },
+              phone : {
+              required : true;
+              minlength : 11
+              }
+          },
+          messages: {
+              name: {
+              required: "Please enter username",
+              }
+              email: {
+              required: "Please enter a email address",
+              email: "Please enter a valid email address"
+              },
+              phone: {
+              required: "Please enter phone nummber",
+              minlength: "Phone will be minimum 11 numbers"
+              }   
+          },
+          errorElement: 'span',
+          errorPlacement: function (error, element) {
+              error.addClass('invalid-feedback');
+              element.closest('.form-group').append(error);
+          },
+          highlight: function (element, errorClass, validClass) {
+              $(element).addClass('is-invalid');
+          },
+          unhighlight: function (element, errorClass, validClass) {
+              $(element).removeClass('is-invalid');
+          }
+          });
+      });
+    </script>
 
 @endsection
