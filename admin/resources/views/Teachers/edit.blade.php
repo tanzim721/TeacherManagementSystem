@@ -42,10 +42,9 @@
                     
                   </div><!-- /.card-header -->
                   <div class="card-body">
-                    <form method="POST" action="{{route('teachers.update',$editData->id)}}" id="myForm">
+                    <form method="POST" action="{{route('teachers.update', $editData->id)}}" id="myForm">
                       @csrf
                       <div class="form-row">
-                        
                         <div class="form-group col-md-4">
                           <label for="name" >Name</label>
                           <input type="text" value="{{$editData->name}}" name="name" class="form-control">
@@ -60,16 +59,16 @@
                           <label for="phone">Phone</label>
                           <input type="text" value="{{$editData->phone}}" name="phone" class="form-control">
                           <font style="color:red">{{($errors->has('phone'))?($errors->first('phone')):''}}</font>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label for="gendertype">User Role</label>
+                        </div>                              
+                        {{-- <div class="form-group col-md-4">
+                          <label for="gendertype">Gender</label>
                           <select name="gendertype" id="gendertype" class="form-control">
                             <option value="">Select Gender</option>
                             <option value="Male" {{($editData->gendertype=="Male")?"selected":""}}>Male</option>
                             <option value="Female" {{($editData->gendertype=="Female")?"selected":""}}>Female</option>
                             <option value="Other" {{($editData->gendertype=="Other")?"selected":""}}>Other</option>
                           </select>
-                        </div>
+                        </div> --}}
                         <div class="form-group col-md-4">
                           <label for="date">Date of Birth</label>
                           <input type="date" value="{{$editData->dateOfBirth}}" name="dateOfBirth" class="form-control">
@@ -81,7 +80,7 @@
                           <font style="color:red">{{($errors->has('image'))?($errors->first('image')):''}}</font>
                         </div>
                         <div class="form-group col-md-6">
-                          <input type="submit" name="" value="update" class="btn btn-primary">
+                          <input type="submit" name="" value="Update" class="btn btn-primary">
                         </div>
                       </div>
                     </form>          

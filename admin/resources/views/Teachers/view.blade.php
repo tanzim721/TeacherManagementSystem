@@ -41,22 +41,22 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
-                                        <th>Gender</th>
+                                        {{-- <th>Gender</th> --}}
                                         <th>Date of Birth</th>
                                         <th>Image</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-                                <tbody id="service_table">
+                                <tbody id="teachers_models">
                                     @foreach($allData as $key => $teachers)
                                     <tr>
                                         <td>{{$key+1}}.</td>
                                         <td>{{$teachers->name}}</td>
                                         <td>{{$teachers->email}}</td>
                                         <td>{{$teachers->phone}}</td>
-                                        <td>{{$teachers->gender}}</td>
+                                        {{-- <td>{{$teachers->gender}}</td> --}}
                                         <td>{{$teachers->dateOfBirth}}</td>
-                                        <td><img style="width: 45px; height:45px" class="card-img-top" src="{{$teachers->image}}" alt="Card image cap"></td>
+                                        <td><img style="width: 45px; height:45px" class="card-img-top" src="{{$teachers->image}}" alt=""></td>
                                         <td>
                                             <a href="{{route('teachers.edit', $teachers->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
                                             <a href="{{route('teachers.delete',$teachers->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>

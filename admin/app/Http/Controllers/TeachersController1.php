@@ -6,15 +6,14 @@ use Illuminate\Http\Request;
 use App\VisitorModel;
 use App\ServicesModel;
 use App\GalleryModel;
-use App\TeachersList;
+use App\TeachersModel;
 use DB;
 
-
-class TeachersController extends Controller
+class TeachersController1 extends Controller
 {
     function Index(){
         // dd('ok');
-        $allData = TeachersList::all();
+        $allData = TeachersModel::all();
         return view('Teachers', [ 'allData' =>$allData]);
     }
     public function Add(){
@@ -25,9 +24,9 @@ class TeachersController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'image' => 'required',
-            'email' => 'required|unique:teachers_lists,email'
+            'email' => 'required|unique:teachers_models,email'
         ]);
-        $data = new TeachersList();
+        $data = new TeachersModel();
         $data->name = $request->name;
         $data->email = $request->email;
         $data->phone = $request->phone;
@@ -38,11 +37,11 @@ class TeachersController extends Controller
         return redirect()->route('teachers.view')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
-        $editData = TeachersList::find($id);
+        $editData = TeachersModel::find($id);
         return view('Teachers.edit', compact('editData'));
     }
     public function Update(Request $request, $id){
-        $data = TeachersList::find($id);
+        $data = TeachersModel::find($id);
         $data->name = $request->name;   
         $data->email = $request->email;
         $data->phone = $request->phone;
@@ -53,7 +52,7 @@ class TeachersController extends Controller
         return redirect()->route('teachers.view')->with('success','Data Update Successfully');
     }
     public function Delete(Request $request, $id){
-        $data = TeachersList::find($id);
+        $data = TeachersModel::find($id);
         $data->delete();
         return redirect()->route('Teachers.view')->with('success','Data Delete Successfully');
     }

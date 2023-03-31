@@ -64,7 +64,7 @@
                                 <input type="text" name="phone" class="form-control">
                                 <font style="color:red">{{($errors->has('phone'))?($errors->first('phone')):''}}</font>
                             </div>
-                            <div class="form-group col-md-4">
+                            {{-- <div class="form-group col-md-4">
                                 <label for="gendertype">Gender</label>
                                 <select name="gendertype" id="gendertype" class="form-control">
                                   <option value="">Select Gender</option>
@@ -72,7 +72,7 @@
                                   <option value="Female">Female</option>
                                   <option value="Other">Other</option>
                                 </select>
-                            </div>
+                            </div> --}}
                             <div class="form-group col-4">
                                 <label for="name" >Date of Birth</label>
                                 <input type="Date" name="dateOfBirth" class="form-control" placeholder="">
