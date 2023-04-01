@@ -66,7 +66,7 @@
     $.widget.bridge('uibutton', $.ui.button)
     </script>
     <!-- Bootstrap 4 -->
-    <script src="{{asset('backend/')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('backend/')}}/js/bootstrap.bundle.min.js"></script>
     <!-- ChartJS -->
     <script src="{{asset('backend/')}}/plugins/chart.js/Chart.min.js"></script>
     <!-- Sparkline -->
@@ -91,7 +91,7 @@
     {{-- <script src="{{asset('backend/')}}/dist/js/demo.js"></script>  --}}
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{asset('backend/')}}/dist/js/pages/dashboard.js"></script> 
-
+    <script src="{{asset('backend/')}}/dist/js/pages/bootstrap.bundle.min.js"></script> 
     <!-- DataTables  & Plugins -->
     <script src="{{asset('backend/')}}/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="{{asset('backend/')}}/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>

@@ -29,6 +29,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.top-banner-title{
+    font-size: 75px;
+    line-height: 75px;
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 37%;
+    font-family: "georgiabold";
+    font-weight: 700;
+}
 /* .backcolor{
     background-color: rgb(253, 253, 253);
 } */
@@ -39,4 +49,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: bisque;
+    text-shadow: 2px 2px #ff0000;
 }
