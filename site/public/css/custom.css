@@ -29,6 +29,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.backcolor{
+/* .backcolor{
     background-color: rgb(253, 253, 253);
+} */
+.backBanner{
+    background-image: url('/images/pust lake.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

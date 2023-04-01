@@ -8,6 +8,18 @@
             <li class="nav-item ">
                 <a class="nav-link text-bold" href="{{url('/')}}">HOME</a>
             </li>
+            <div class="dropdown">
+                <a class="nav-link text-bold dropdown-toggle" data-bs-toggle="dropdown" href="">About</a>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+            </div>
+            {{-- <li class="nav-item">
+
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link text-bold" href="{{route('gallery.view')}}">PHOTO</a>
             </li>

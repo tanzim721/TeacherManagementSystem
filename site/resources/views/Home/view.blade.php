@@ -26,8 +26,8 @@
 </div> --}}
 
 
-<div class="container-fluid jumbotron m-1 bg-white">
-    <h2 class="text-center pb-5 px-2 text-bold">@yield('page_name')</h2>
+<div class="container-fluid jumbotron m-1 bg-white backBanner">
+    {{-- <h2 class="text-center pb-5 px-2 text-bold">@yield('page_name')</h2> --}}
     <div class="row">
 
         <div class="col-md-6">
@@ -36,8 +36,8 @@
 
         <div class="col-md-6 justify-content-center backcolor">
             <div class="m-lg-5 m-md-5 p-lg-5 m-sm-3 p-sm-3 p-md-5">
-                <h5 class="top-banner-title text-justify">Department of ICE</h5>
-                <h5 class="top-banner-title text-justify">Pabna University of Science and Technology</h5>
+                <h4 class="top-banner-title text-justify text-bold">Department of ICE</h4>
+                <h5 class="top-banner-title text-justify text-bold">Pabna University of Science and Technology</h5>
             </div> 
         </div>
         
