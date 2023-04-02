@@ -37,7 +37,7 @@ body{
     color: white;
     position: absolute;
     left: 15px;
-    top: 37%;
+    top: 2%;
     font-family: "georgiabold";
     font-weight: 700;
 }
@@ -46,11 +46,27 @@ body{
 } */
 .backBanner{
     background-image: url('/images/pust lake.jpg');
-    min-height: 400px;
+    max-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: bisque;
-    text-shadow: 2px 2px #ff0000;
+    color: rgb(9, 9, 9);
+    
+}
+.optimizeDiv{
+    text-shadow: 2px 2px #ffffff;
+}
+.bannerUnder{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "georgiabold";
+    font-weight: bolder;
+    padding-top: 320px;
+}
+.backBanner:hover{
+    color: green;
+    background-color: transparent;
 }

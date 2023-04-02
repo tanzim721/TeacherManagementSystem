@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row p-5 bg-dark text-light text-left">
         <div class="col-md-4">
-            <h3>Follow Me</h3>
+            <h3>Follow Us</h3>
             <div class="pl-3">
                 <a href="">Link 1</a><br>
                 <a href="">Link 2</a><br>
