@@ -36,10 +36,32 @@
 
         <div class="col-md-12">
             <div class="">
-                <h4 class="top-banner-title text-white text-right">ICE</h4>
+                <h4 class="top-banner-title text-white text-jutify">Dept. of ICE</h4>
                 {{-- <h5 class="top-banner-title text-justify text-bold">Pabna University of Science and Technology</h5> --}}
             </div> 
         </div>
+        {{-- <div class="col-md-12">
+            <ul class="navbar-nav col-lg-11">
+                <li class="nav-item ">
+                    <a class="nav-link text-bold" href="{{url('/')}}">HOME</a>
+                    <a class="nav-link text-bold" href="{{route('gallery.view')}}">PHOTO</a>
+
+                </li>
+                
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-bold" href="{{url('/')}}">NOTICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-bold" href="{{url('/')}}">CONTACT US</a>
+                </li>
+            </ul> 
+        </div> --}}
+       
         
     </div>
 </div>

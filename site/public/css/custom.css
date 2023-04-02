@@ -1,5 +1,7 @@
 body{
     font-family: 'Open Sans';
+    margin: 0px;
+    padding: 0px;
 }
 .brand-logo{
     width: 60px;
@@ -30,8 +32,8 @@ body{
     background-size: cover;
 }
 .top-banner-title{
-    font-size: 75px;
-    line-height: 75px;
+    font-size: 50px;
+    line-height: 50px;
     color: white;
     position: absolute;
     left: 15px;
