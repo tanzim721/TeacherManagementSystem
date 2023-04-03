@@ -74,7 +74,7 @@
                         </div> --}}
                         <div class="form-group col-md-4">
                           <label for="name" >Designation</label>
-                          <input type="text" name="designation" class="form-control">
+                          <input type="text" name="designation" class="form-control" value="{{$editData->designation}}">
                           <font style="color:red">{{($errors->has('designation'))?($errors->first('designation')):''}}</font>
                         </div>
                         <div class="form-group col-md-4">
