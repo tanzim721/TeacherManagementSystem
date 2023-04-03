@@ -30,10 +30,10 @@
                 <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-bold" href="{{url('/')}}">NOTICES</a>
+                <a class="nav-link text-bold" href="">NOTICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-bold" href="{{url('/')}}">CONTACT US</a>
+                <a class="nav-link text-bold" href="{{route('teachers.view')}}">CONTACT TEACHERS</a>
             </li>
         </ul> 
         <div class="text-aline:right col-lg-1">
