@@ -44,6 +44,7 @@
                                         <th>Phone</th>
                                         {{-- <th>Gender</th> --}}
                                         {{-- <th>Date of Birth</th> --}}
+                                        <th>Designation</th>
                                         <th>Image</th>
                                         <th>Action</th>
                                     </tr>
@@ -57,6 +58,7 @@
                                         <td>{{$teachers->phone}}</td>
                                         {{-- <td>{{$teachers->gender}}</td> --}}
                                         {{-- <td>{{$teachers->dateOfBirth}}</td> --}}
+                                        <td>{{$teachers->designation}}</td>
                                         <td><img style="width: 45px; height:45px" class="card-img-top" src="{{$teachers->image}}" alt=""></td>
                                         <td>
                                             <a href="{{route('teachers.edit', $teachers->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 

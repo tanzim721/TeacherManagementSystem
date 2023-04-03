@@ -63,7 +63,7 @@
                                 <label for="name" >Phone</label>
                                 <input type="text" name="phone" class="form-control">
                                 <font style="color:red">{{($errors->has('phone'))?($errors->first('phone')):''}}</font>
-                            </div>
+                            </div> 
                             {{-- <div class="form-group col-md-4">
                                 <label for="gendertype">Gender</label>
                                 <select name="gendertype" id="gendertype" class="form-control">
@@ -78,6 +78,11 @@
                                 <input type="Date" name="dateOfBirth" class="form-control" placeholder="">
                                 <font style="color:red">{{($errors->has('dateOfBirth'))?($errors->first('dateOfBirth')):''}}</font>
                             </div> --}}
+                            <div class="form-group col-md-4">
+                              <label for="name" >Designation</label>
+                              <input type="text" name="designation" class="form-control">
+                              <font style="color:red">{{($errors->has('designation'))?($errors->first('designation')):''}}</font>
+                            </div>
                             <div class="form-group col-md-4">
                                 <label for="image">Image</label>
                                 <input type="file" name="image" class="form-control">
