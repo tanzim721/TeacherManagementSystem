@@ -57,14 +57,15 @@ body{
 .optimizeDiv{
     text-shadow: 2px 2px #ffffff;
 }
-.bannerUnder{
-    color: black;
+.bannerUnderText{
+    color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 15px;
     font-family: "georgiabold";
     font-weight: bolder;
-    padding-top: 320px;
+    padding-top: 345px;
+    text-shadow: 1px 1px black;
 }
 .backBanner:hover{
     color: green;

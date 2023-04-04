@@ -29,7 +29,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="text-bold">Teachers List</h4>
-                            Ekhane duita problem: 1.delete kaj korteche na 2.image save hocche na....
+                            Ekhane ekta problem: 1.delete kaj korteche na
                             <a class="btn btn-success float-right btn-sm" href="{{route('teachers.add')}}"><i class="fa fa-plus-circle"></i> Add Teachers</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">

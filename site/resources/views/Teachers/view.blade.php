@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container ">
     <h2 class="text-center p-3 text-bold">@yield('page_name')</h2>
     <div class="row ">
         @foreach($editData as $key => $teachers)
