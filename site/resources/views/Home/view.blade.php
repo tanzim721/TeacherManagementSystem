@@ -20,7 +20,7 @@
 </div>
 
 {{-- toggleable dynamic section starts --}}
-<div class="container-fluid pb-4 other-section">
+<div class="container-fluid pb-4 other-section wrapper">
     <div class="row">
         <div class="col-md-2">
 
@@ -33,8 +33,8 @@
                 <li class="nav-item">
                     <a data-toggle="tab" href="#CourseList" class="text-black nav-link">Course List</a>
                 </li>
-                <li class="nav-item">
-                    <a data-toggle="tab" href="#Apply" class="text-black nav-link text-right">Apply</a>
+                <li class="nav-item text-aline:right">
+                    <a data-toggle="tab" href="#Apply" class="text-black nav-link ">Apply</a>
                 </li>
             </ul>
             <div class="tab-content">

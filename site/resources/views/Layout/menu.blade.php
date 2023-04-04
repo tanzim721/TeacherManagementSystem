@@ -11,22 +11,22 @@
             </li>
             <li class="dropdown">
                 <a href="" class="pt-5 dropbtn">ABOUT</a>
-                <i class="fa fa-angle-down"></i>
+                {{-- <i class="fa fa-angle-down"></i> --}}
                 <div class="dropdown-content">
                     <a href="" class="text-bold">Overview</a>
                     <a href="" class="text-bold">Overview</a>
                     <a href="" class="text-bold" >Overview</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="dropdown">
                 {{-- <a class="nav-link text-bold" href="{{route('gallery.view')}}">PHOTO</a> --}}
                 <a href="{{route('gallery.view')}}" class="pt-5 dropbtn">PHOTO</a>
             </li>
-            <li class="nav-item">
+            <li class="dropdown">
                 <a href="{{route('service.view')}}" class="pt-5 dropbtn">SERVICES</a>
                 {{-- <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a> --}}
             </li>
-            <li class="nav-item">
+            <li class="dropdown">
                 <a href="" class="pt-5 dropbtn">ACADEMICS</a>
                 {{-- <i class="fa fa-angle-down"></i> --}}
                 <div class="dropdown-content">
@@ -35,7 +35,7 @@
                     <a href="" class="text-bold" >Overview</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="dropdown">
                 <a href="" class="pt-5 dropbtn">ANNOUNCEMENTS</a>
                 {{-- <i class="fa fa-angle-down"></i> --}}
                 <div class="dropdown-content">
@@ -44,7 +44,7 @@
                     <a href="" class="text-bold" >Overview</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="dropdown">
                 <a href="{{route('teachers.view')}}" class="pt-5 dropbtn">CONTACT TEACHERS</a>
                 {{-- <a class="nav-link text-bold" href="{{route('teachers.view')}}">CONTACT TEACHERS</a> --}}
             </li>
