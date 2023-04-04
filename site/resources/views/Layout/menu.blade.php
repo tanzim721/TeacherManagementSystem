@@ -3,37 +3,50 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav col-lg-11">
             <li class="nav-item ">
-                <a class="nav-link text-bold" href="{{url('/')}}">HOME</a>
+                {{-- <a class="nav-link text-bold" href="{{url('/')}}">HOME</a> --}}
+                <a href="{{url('/')}}" class="pt-5 dropbtn">HOME</a>
             </li>
-            {{-- <li class="dropdown nav-item">
-                <a href="" class="nav-link head-item">About</a>
+            <li class="dropdown">
+                <a href="" class="pt-5 dropbtn">ABOUT</a>
                 <i class="fa fa-angle-down"></i>
-                <ul class="sidenav-dropdown" data-sidenav-dropdown>
-                    <li class="sub-dropdown">
-                        <a href="" class="dropdown-item">Overview</a>
-                    </li>
-                    <li class="sub-dropdown">
-                        <a href="" class="dropdown-item">Overview</a>
-                    </li>
-                    <li class="sub-dropdown">
-                        <a href="" class="dropdown-item">Overview</a>
-                    </li>
-                </ul>
-            </li> --}}
-            <li class="nav-item">
-                <a class="nav-link text-bold" href="{{route('gallery.view')}}">PHOTO</a>
+                <div class="dropdown-content">
+                    <a href="" class="text-bold">Overview</a>
+                    <a href="" class="text-bold">Overview</a>
+                    <a href="" class="text-bold" >Overview</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a>
+                {{-- <a class="nav-link text-bold" href="{{route('gallery.view')}}">PHOTO</a> --}}
+                <a href="{{route('gallery.view')}}" class="pt-5 dropbtn">PHOTO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-bold" href="">NOTICES</a>
+                <a href="{{route('service.view')}}" class="pt-5 dropbtn">SERVICES</a>
+                {{-- <a class="nav-link text-bold" href="{{route('service.view')}}">SERVICES</a> --}}
             </li>
             <li class="nav-item">
-                <a class="nav-link text-bold" href="{{route('teachers.view')}}">CONTACT TEACHERS</a>
+                <a href="" class="pt-5 dropbtn">ACADEMICS</a>
+                {{-- <i class="fa fa-angle-down"></i> --}}
+                <div class="dropdown-content">
+                    <a href="" class="text-bold">Overview</a>
+                    <a href="" class="text-bold">Overview</a>
+                    <a href="" class="text-bold" >Overview</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="" class="pt-5 dropbtn">ANNOUNCEMENTS</a>
+                {{-- <i class="fa fa-angle-down"></i> --}}
+                <div class="dropdown-content">
+                    <a href="" class="text-bold">Overview</a>
+                    <a href="" class="text-bold">Overview</a>
+                    <a href="" class="text-bold" >Overview</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="{{route('teachers.view')}}" class="pt-5 dropbtn">CONTACT TEACHERS</a>
+                {{-- <a class="nav-link text-bold" href="{{route('teachers.view')}}">CONTACT TEACHERS</a> --}}
             </li>
         </ul> 
         <div class="text-aline:right col-lg-1">

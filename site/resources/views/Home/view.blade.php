@@ -12,7 +12,8 @@
             <div class="col-md-12 bannerUnderText">
                 <a href="" class="text-center bannerUnderText">Home</a> || 
                 <a href="" class="text-center bannerUnderText">Academics</a> || 
-                <a href="" class="text-center bannerUnderText">Information and Communication Engineering(ICE)</a>
+                <a href="" class="text-center bannerUnderText">Information and Communication Engineering(ICE)</a><br>
+                <a target="__blank" href="https://pust.ac.bd/" class="text-center bannerUnderText">Pabna University of Science ans Technology</a>
             </div>
         </div>       
     </div>
@@ -20,30 +21,43 @@
 
 {{-- toggleable dynamic section starts --}}
 <div class="container-fluid pb-4 other-section">
-    <ul class="nav">
-        <li class="nav-item">
-            <a data-toggle="tab" href="#Objectives" class="nav-link active">Program outline</a>
-        </li>
-        <li class="nav-item">
-            <a data-toggle="tab" href="#Mission" class="nav-link">Course List</a>
-        </li>
-        <li class="nav-item">
-            <a data-toggle="tab" href="#Vision" class="nav-link">General Guidline</a>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane active" id="Objectives">
-            <h4>Objectives</h4>
-            <p>The objectives of this program are to: a. Produce ICE professionals who are highly competent internationally and possess morality and good work ethics. b. Develop an ICE curriculum that meets international standard. c. Develop ICE research and innovations. d. Transfer, apply, and adapt ICE knowledge to the society. e. Participate in engagements and promote service learning. f. Foster a dedicated alumnus group from satisfied to restore and enrich students.</p>
+    <div class="row">
+        <div class="col-md-2">
+
         </div>
-        <div class="tab-pane fade" id="Mission">
-            <h4>Mission</h4>
-            <p>The objectives of this program are to: a. Produce ICE professionals who are highly competent internationally and possess morality and good work ethics. b. Develop an ICE curriculum that meets international standard. c. Develop ICE research and innovations. d. Transfer, apply, and adapt ICE knowledge to the society. e. Participate in engagements and promote service learning. f. Foster a dedicated alumnus group from satisfied to restore and enrich students.</p>
+        <div class="col-md-8">
+            <ul class="nav homeUnderText pl-5">
+                <li class="nav-item ">
+                    <a data-toggle="tab" href="#Objectives" class="text-black nav-link active">Program outline</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="tab" href="#CourseList" class="text-black nav-link">Course List</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="tab" href="#Apply" class="text-black nav-link text-right">Apply</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active p-4 text-justify" id="Objectives">
+                    <h4>Objectives</h4>
+                    <p>The objectives of this program are to: a. Produce ICE professionals who are highly competent internationally and possess morality and good work ethics. b. Develop an ICE curriculum that meets international standard. c. Develop ICE research and innovations. d. Transfer, apply, and adapt ICE knowledge to the society. e. Participate in engagements and promote service learning. f. Foster a dedicated alumnus group from satisfied to restore and enrich students.</p>
+                    <h4>Mission</h4>
+                    <p>The objectives of this program are to: a. Produce ICE professionals who are highly competent internationally and possess morality and good work ethics. b. Develop an ICE curriculum that meets international standard. c. Develop ICE research and innovations. d. Transfer, apply, and adapt ICE knowledge to the society. e. Participate in engagements and promote service learning. f. Foster a dedicated alumnus group from satisfied to restore and enrich students.</p>
+                    <h4>Vision</h4>
+                    <p>The objectives of this program are to: a. Produce ICE professionals who are highly competent internationally and possess morality and good work ethics. b. Develop an ICE curriculum that meets international standard. c. Develop ICE research and innovations. d. Transfer, apply, and adapt ICE knowledge to the society. e. Participate in engagements and promote service learning. f. Foster a dedicated alumnus group from satisfied to restore and enrich students.</p>
+                </div>
+                <div class="tab-pane fade" id="CourseList">
+                    
+                </div>
+                <div class="tab-pane fade" id="Apply">
+                    
+                </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="Vision">
-            <h4>Vision</h4>
-            <p>The objectives of this program are to: a. Produce ICE professionals who are highly competent internationally and possess morality and good work ethics. b. Develop an ICE curriculum that meets international standard. c. Develop ICE research and innovations. d. Transfer, apply, and adapt ICE knowledge to the society. e. Participate in engagements and promote service learning. f. Foster a dedicated alumnus group from satisfied to restore and enrich students.</p>
+        <div class="col-md-2">
+
         </div>
     </div>
+    
     
 </div>

@@ -1,5 +1,5 @@
 body{
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -64,10 +64,70 @@ body{
     font-size: 15px;
     font-family: "georgiabold";
     font-weight: bolder;
-    padding-top: 345px;
-    text-shadow: 1px 1px black;
+    padding-top: 335px;
+    text-shadow: 1px 1px rgb(149, 128, 128);
 }
 .backBanner:hover{
-    color: green;
+    color: rgb(255, 255, 255);
     background-color: transparent;
 }
+
+/* home section under text */
+.homeUnderText{
+    border: 3px solid black;
+    border-radius: 15px;
+    color: rgb(8, 6, 6);
+    padding-left: 30%;
+    text-align: center;
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+/* .homeUnderText > li:hover{
+    background-color: aqua;
+} */
+
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: black;
+    padding: 16px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: none;
+  }
