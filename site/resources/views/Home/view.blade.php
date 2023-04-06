@@ -13,7 +13,7 @@
                 <a href="" class="text-center bannerUnderText">Home</a> || 
                 <a href="" class="text-center bannerUnderText">Academics</a> || 
                 <a href="" class="text-center bannerUnderText">Information and Communication Engineering(ICE)</a><br>
-                <a target="__blank" href="https://pust.ac.bd/" class="text-center bannerUnderText">Pabna University of Science ans Technology</a>
+                <a target="__blank" href="https://pust.ac.bd/" class="text-center bannerUnderText">Pabna University of Science and Technology</a>
             </div>
         </div>       
     </div>

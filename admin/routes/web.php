@@ -20,11 +20,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@HomeIndex');
 Route::get('/visitor', 'VisitorController@VisitorIndex')->name('visitor');
 
-    Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
-    Route::get('/service/add', 'ServiceController@ServiceIndex')->name('service.add');
-    Route::post('/service/delete', 'ServiceController@ServiceDelete')->name('service.delete');
-Route::get('/getServicesData', 'ServiceController@getServicesData');
-
+Route::get('/services', 'ServiceController@Index')->name('services.view');
+Route::get('/services/add', 'ServiceController@Add')->name('services.add');
+Route::POST('/services/store', 'ServiceController@Store')->name('services.store');
+Route::get('/services/edit/{id}', 'ServiceController@Edit')->name('services.edit');
+Route::POST('/services/update/{id}', 'ServiceController@Update')->name('services.update');
+Route::post('/services/delete/{id}', 'ServiceController@Delete')->name('services.delete');
+// Route::get('/getServicesData', 'ServiceController@getServicesData');
+ 
 //Gallery................
 Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
 Route::get('/gallery/add', 'GalleryController@GalleryAdd')->name('gallery.add');

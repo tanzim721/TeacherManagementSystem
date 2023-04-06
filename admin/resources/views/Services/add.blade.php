@@ -1,9 +1,9 @@
 @extends('Layout.app')
 
-@section('title', 'Teachers')
+@section('title', 'Services')
 
 @section('content')
-    @section('page_name', 'Teachers')
+    @section('page_name', 'Services')
     
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -11,13 +11,10 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Manage Teachers</h1>
+                <h1 class="m-0">Manage Services</h1>
               </div><!-- /.col -->
               <div class="col-sm-6">
-                <!-- <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">Student</li>
-                </ol> -->
+            
               </div><!-- /.col -->
             </div><!-- /.row -->
           </div><!-- /.container-fluid -->
@@ -37,16 +34,16 @@
                 <div class="card">
                   <div class="card-header">
                     <h4 class="text-bold">
-                      @if(isset($allData))
-                        Edit Teachers
+                      @if(isset($ServicesData))
+                        Edit Services
                       @else
-                        Add Teachers
+                        Add Services
                       @endif
                     </h4>
-                    <a class="btn btn-success float-right btn-sm" href="{{route('teachers.view')}}"><i class="fa fa-list"></i> View List</a>
+                    <a class="btn btn-success float-right btn-sm" href="{{route('services.view')}}"><i class="fa fa-list"></i> View List</a>
                 </div><!-- /.card-header -->
                 <div class="card-body">
-                    <form method="POST" action="{{(@$allData)?route('teachers.update', $allData->id):route('teachers.store')}}" id="myForm">
+                    <form method="POST" action="{{(@$ServicesData)?route('services.update', $ServicesData->id):route('services.store')}}" id="myForm">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
@@ -64,20 +61,7 @@
                                 <input type="text" name="phone" class="form-control">
                                 <font style="color:red">{{($errors->has('phone'))?($errors->first('phone')):''}}</font>
                             </div> 
-                            {{-- <div class="form-group col-md-4">
-                                <label for="gendertype">Gender</label>
-                                <select name="gendertype" id="gendertype" class="form-control">
-                                  <option value="">Select Gender</option>
-                                  <option value="Male">Male</option>
-                                  <option value="Female">Female</option>
-                                  <option value="Other">Other</option>
-                                </select>
-                            </div> --}}
-                            {{-- <div class="form-group col-4">
-                                <label for="name" >Date of Birth</label>
-                                <input type="Date" name="dateOfBirth" class="form-control" placeholder="">
-                                <font style="color:red">{{($errors->has('dateOfBirth'))?($errors->first('dateOfBirth')):''}}</font>
-                            </div> --}}
+                            
                             <div class="form-group col-md-4">
                               <label for="name" >Designation</label>
                               <input type="text" name="designation" class="form-control">
@@ -88,7 +72,7 @@
                                 <input type="file" name="image" class="form-control">
                             </div>
                             <div class="form-group col-md-6">
-                              <button type="submit" class="btn btn-primary">{{(@$allData)?'Update':'Submit'}}</button>
+                              <button type="submit" class="btn btn-primary">{{(@$ServicesData)?'Update':'Submit'}}</button>
                             </div>
                         </div>
                     </form>          
@@ -102,7 +86,7 @@
           </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
-      </div> 
+    </div> 
 
     
     <script type="text/javascript">

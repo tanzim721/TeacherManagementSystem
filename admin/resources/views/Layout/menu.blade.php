@@ -29,7 +29,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{route('service.view')}}" class="nav-link"> 
+            <a href="{{route('services.view')}}" class="nav-link"> 
                 <i class="nav-icon fas fa-globe"></i> 
                 <p> Service
                     <i class="fas fa-angle-left right"></i>
