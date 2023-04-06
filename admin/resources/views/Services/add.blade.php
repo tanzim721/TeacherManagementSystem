@@ -47,29 +47,19 @@
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
-                                <label for="name" >Name</label>
-                                <input type="text" name="name" class="form-control">
-                                <font style="color:red">{{($errors->has('name'))?($errors->first('name')):''}}</font>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" class="form-control">
-                                <font style="color:red">{{($errors->has('email'))?($errors->first('email')):''}}</font>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" >Phone</label>
-                                <input type="text" name="phone" class="form-control">
-                                <font style="color:red">{{($errors->has('phone'))?($errors->first('phone')):''}}</font>
-                            </div> 
-                            
-                            <div class="form-group col-md-4">
-                              <label for="name" >Designation</label>
-                              <input type="text" name="designation" class="form-control">
-                              <font style="color:red">{{($errors->has('designation'))?($errors->first('designation')):''}}</font>
-                            </div>
-                            <div class="form-group col-md-4">
                                 <label for="image">Image</label>
                                 <input type="file" name="image" class="form-control">
+                                <font style="color:red">{{($errors->has('service_img'))?($errors->first('service_img')):''}}</font>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="name" >Name</label>
+                                <input type="text" name="name" class="form-control">
+                                <font style="color:red">{{($errors->has('service_name'))?($errors->first('service_name')):''}}</font>
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="name" >Description</label>
+                              <input type="text" name="service_des" class="form-control">
+                              <font style="color:red">{{($errors->has('service_des'))?($errors->first('service_des')):''}}</font>
                             </div>
                             <div class="form-group col-md-6">
                               <button type="submit" class="btn btn-primary">{{(@$ServicesData)?'Update':'Submit'}}</button>
