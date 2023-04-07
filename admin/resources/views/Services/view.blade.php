@@ -32,10 +32,10 @@
                 <a class="btn btn-success float-right btn-sm" href="{{route('services.add')}}"><i class="fa fa-plus-circle"></i> Add Service</a>
               </div><!-- /.card-header -->  
               <div class="card-body">
-                <table id="VisitorDt" class="table table-bordered table-hover text-center">
+                <table id="VisitorDt" class="table table-bordered table-hover ">
                 {{-- <table id="example1" class="table table-bordered table-hover text-center"> --}}
                 {{-- <table id="example2" class="table table-bordered table-hover text-center"> --}}
-                    <thead>
+                    <thead class="text-center">
                         <tr>
                         <th>Image</th>
                         <th>Title</th>
@@ -56,7 +56,7 @@
                         @endforeach
                     </tbody>
                     {{-- <tbody id="service_tables">
-                      
+
                     </tbody> --}}
                 </table>  
               </div>
