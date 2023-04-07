@@ -50,8 +50,8 @@
                             <td><img style="width: 50px; height:50px" class="card-img-top" src="{{$services->service_img}}" alt="Card image cap"></td>
                             <td>{{$services->service_name}}</td>
                             <td>{{$services->service_des}}</td>
-                            <td><a href="#" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> </td>
-                            <td><a href="" type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="text-light fa fa-trash"></i></a></td>
+                            <td><a href="{{route('services.edit', $services->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> </td>
+                            <td><a href="{{route('services.delete', $services->id)}}" type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="text-light fa fa-trash"></i></a></td>
                           </tr>
                         @endforeach
                     </tbody>

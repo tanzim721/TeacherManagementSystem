@@ -52,7 +52,7 @@
                                 <font style="color:red">{{($errors->has('service_img'))?($errors->first('service_img')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="name" >Name</label>
+                                <label for="name" >Title</label>
                                 <input type="text" name="name" class="form-control">
                                 <font style="color:red">{{($errors->has('service_name'))?($errors->first('service_name')):''}}</font>
                             </div>
