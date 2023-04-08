@@ -55,9 +55,7 @@
                           </tr>
                         @endforeach
                     </tbody>
-                    {{-- <tbody id="service_tables">
-
-                    </tbody> --}}
+                    
                 </table>  
               </div>
               <!-- /.card-body -->

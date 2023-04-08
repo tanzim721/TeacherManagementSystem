@@ -31,7 +31,7 @@ class ServiceController extends Controller
     }
     public function Edit($id){
         $ServicesData = ServicesModel::find($id);
-        return view('services.edit', compact('ServicesData'));
+        return view('Services.edit', compact('ServicesData'));
     }
     public function Update(Request $request, $id){
         $data = ServicesModel::find($id);
