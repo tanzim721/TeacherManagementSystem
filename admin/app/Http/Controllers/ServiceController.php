@@ -17,7 +17,6 @@ class ServiceController extends Controller
         return view('Services.add');
     }
     public function Store(Request $request){
-        // dd('ok');
         $this->validate($request, [
             'service_name' => 'required',
             'service_img' => 'required:services_models,service_img'
