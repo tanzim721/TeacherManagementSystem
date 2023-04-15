@@ -1,0 +1,28 @@
+body{
+    font-family: 'Open Sans';
+}
+.Varity-logo{
+    width: 60px;
+    height: 70px;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.banner{
+    background-image: url('/images/banner.webp');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerText{
+    margin-top: 150px;
+}
+.loding-icon{
+    width: 250px;
+    height: 200px;
+    background-color: none;
+    
+}
