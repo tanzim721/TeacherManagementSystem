@@ -10,53 +10,31 @@
     </div>
 </div>
 <!-- Sidebar Menu -->
-<nav class="mt-2 treeview ">
+<nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item ">           
-            <a href="{{asset('/')}}" class="nav-link"> 
-                <i class="nav-icon fas fa-home"></i> 
-                <p> Home
-                    <i class="fas fa-angle-left right"></i>
-                </p>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-edit"></i>
+          <p>
+            Forms
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>General Elements</p>
             </a>
-        </li> 
-        <li class="nav-item">
-            <a href="{{route('teachers.view')}}" class="nav-link"> 
-                <i class="nav-icon fa fa-user" aria-hidden="true"></i> 
-                <p> Teachers
-                    <i class="fas fa-angle-left right"></i>
-                </p>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Advanced Elements</p>
             </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{route('visitor')}}" class="nav-link"> 
-                <i class="nav-icon fas fa-users"></i> 
-                <p> Visitor
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{route('services.view')}}" class="nav-link"> 
-                <i class="nav-icon fas fa-globe"></i> 
-                <p> Service
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="{{route('gallery.view')}}" class="nav-link"> 
-                <i class="nav-icon fa fa-file-image" aria-hidden="true"></i> 
-                <p> Gallery
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-        </li>
-        
-        
-        
-
-        
+          </li>
+        </ul>
+      </li>
     </ul>
 </nav>
 <!-- /.sidebar-menu

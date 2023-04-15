@@ -21,14 +21,6 @@
             </a>
         </li> 
         <li class="nav-item">
-            <a href="{{route('teachers.view')}}" class="nav-link"> 
-                <i class="nav-icon fa fa-user" aria-hidden="true"></i> 
-                <p> Teachers
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
             <a href="{{route('visitor')}}" class="nav-link"> 
                 <i class="nav-icon fas fa-users"></i> 
                 <p> Visitor
@@ -52,7 +44,14 @@
                 </p>
             </a>
         </li>
-        
+        <li class="nav-item">
+            <a href="{{route('teachers.view')}}" class="nav-link"> 
+                <i class="nav-icon fa fa-user" aria-hidden="true"></i> 
+                <p> Teachers
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+        </li>
         
         
 
