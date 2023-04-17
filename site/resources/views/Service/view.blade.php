@@ -9,7 +9,7 @@
                     <h5 class="card-title">{{$services->service_name}}</h5>
                     <p class="card-text">{{$services->service_des}}</p>
                     <br>
-                    <time class="entry-data published" datetime="">02 February, 2023</time>
+                    <time class="entry-data published" datetime=""><?php echo date("m/d/Y"); ?></time>
                     <a href="#" class="btn btn-primary">Go Details</a>
                 </div>      
             </div>
