@@ -7,9 +7,9 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
-    {{-- <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/mdb.rtl.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/mdb.dark.min.css')}}"> --}}
+    <link rel="stylesheet" href="{{asset('css/bootstrap-datetimepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/fullcalendar.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans?query=san">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -153,7 +153,10 @@
     <script src="{{asset('js/sidebar.min.js')}}"></script>
     <script src="{{asset('js/sidebarmenu.js')}}"></script>
     <script src="{{asset('js/sticky-kit.min.js')}}"></script>
-    {{-- <script src="{{asset('js/mdb.min.js')}}"></script> --}}
+    <script src="{{asset('js/bootstrap-datetimepicker.min.js')}}"></script>
+    <script src="{{asset('js/fullcalendar.min.js')}}"></script>
+    <script src="{{asset('js/toastr.min.js')}}"></script>
+
     <script src="{{asset('backend/')}}/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>

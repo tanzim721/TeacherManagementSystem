@@ -10,10 +10,10 @@
     </div>
 </div>
 <!-- Sidebar Menu -->
-<nav class="mt-2">
+<nav class="mt-2 treeview">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{asset('/')}}" class="nav-link">
                 <i class="nav-icon fas fa-home"></i> 
                 <p>
                     Home
@@ -22,7 +22,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('tasks.view')}}" class="nav-link">
                 <i class="nav-icon fas fa-tasks"></i> 
                 <p>
                     Tasks Schedule

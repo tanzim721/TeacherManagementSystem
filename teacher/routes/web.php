@@ -47,7 +47,7 @@ Route::POST('/teachers/delete/{id}', 'TeachersController@Delete')->name('teacher
 
 //calender............
 Route::get('/tasks-schedule', 'CalenderController@index')->name('tasks.view');
-Route::post('/tasks-schedule-store', 'CalenderController@calendarEvents')->name('task.store');
+Route::get('/tasks-schedule-store', 'CalenderController@calendarEvents')->name('task.store');
 
 
   
