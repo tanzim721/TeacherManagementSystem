@@ -57,6 +57,8 @@
     <script src="{{asset('js/sticky-kit.min.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
     <script src="{{asset('js/mdb.min.js')}}"></script>
+    <script src="{{asset('js/axios.min.js')}}"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- jQuery UI 1.11.4 -->

@@ -156,7 +156,8 @@
     <script src="{{asset('js/bootstrap-datetimepicker.min.js')}}"></script>
     <script src="{{asset('js/fullcalendar.min.js')}}"></script>
     <script src="{{asset('js/toastr.min.js')}}"></script>
-
+    <script src="{{asset('js/axios.min.js')}}"></script>
+    
     <script src="{{asset('backend/')}}/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>

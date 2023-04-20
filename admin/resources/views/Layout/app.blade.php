@@ -153,6 +153,8 @@
     <script src="{{asset('js/sidebar.min.js')}}"></script>
     <script src="{{asset('js/sidebarmenu.js')}}"></script>
     <script src="{{asset('js/sticky-kit.min.js')}}"></script>
+    <script src="{{asset('js/axios.min.js')}}"></script>
+
     {{-- <script src="{{asset('js/mdb.min.js')}}"></script> --}}
     <script src="{{asset('backend/')}}/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
