@@ -1,25 +1,40 @@
 <div class="content-wrapper">
-    <!-- Main content -->
+    <!-- Content Header (Page header) -->
     <section class="content">
-        <div class="container-fluid" id="mainDiv">
-           
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 thumbnail-container">
-                    <div class="thumbnail-image">
-                        <div class="thumbnail-middle">
-                            <h1 class="thumbnail-title">Laravel</h1>
-                            <h1 class="thumbnail-subtitle">IT course</h1>
-                            <button class="normal-btn btn">Start</button>
+                <div class="col-lg-4 p-2">
+                    <div class="small-box bg-info"> 
+                        <div class="inner text-center">
+                            <h3>30</h3>
+                            {{-- <h3>{{ \App\User::all()->count() }}</h3> --}}
+                            <p>Total Students</p>
                         </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="" class="small-box-footer">View Students <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-4 p-2">
+                    <div class="small-box bg-info"> 
+                        <div class="inner text-center">
+                            <h3>30</h3>
+                            {{-- <h3>{{ \App\User::all()->count() }}</h3> --}}
+                            <p>Total Students</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="" class="small-box-footer">View Students <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                    
             </div>
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+          
+        </div>
+      </section>     
 </div>
-
-
 
 
 
