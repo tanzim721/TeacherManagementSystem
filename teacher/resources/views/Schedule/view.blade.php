@@ -3,7 +3,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 p-2">
                     <div class="small-box bg-info"> 
                         <div class="inner text-center">
                             <h3>30</h3>
@@ -16,11 +16,9 @@
                         <a href="" class="small-box-footer">View Students <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                    
             </div>
-          
         </div>
-      </section>     
+    </section>     
 </div>
 
 
