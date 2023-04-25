@@ -15,7 +15,7 @@ class GalleryController extends Controller
         return view('Gallery', [ 'dataGallery' =>$dataGallery]);
     }
     public function GalleryAdd(){
-        return view('Gallery.add');
+        return view('Gallery.add'); 
     }
     public function GalleryStore(Request $request){
         $this->validate($request, [
@@ -30,8 +30,8 @@ class GalleryController extends Controller
         return redirect()->route('gallery.view')->with('success', 'Data Inserted Successfully');
     }
     public function GalleryEdit($id){
-        $editData = GalleryModel::find($id);
-        return view('Gallery.edit', compact('editData'));
+        $dataGallery = GalleryModel::find($id);
+        return view('Gallery.edit', compact('dataGallery'));
     }
     public function GalleryUpdate(Request $request, $id){
         $data = GalleryModel::find($id);

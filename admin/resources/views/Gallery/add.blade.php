@@ -37,16 +37,16 @@
                 <div class="card">
                   <div class="card-header">
                     <h4>
-                      @if(isset($editData))
+                      @if(isset($dataGallery))
                         Edit Image
                       @else
-                        Add Student
+                        Add Image
                       @endif
                     </h4>
                     <a class="btn btn-success float-right btn-sm" href="{{route('gallery.view')}}"><i class="fa fa-list"></i> View List</a>
                 </div><!-- /.card-header -->
                 <div class="card-body">
-                    <form method="POST" action="{{(@$editData)?route('gallery.update', $editData->id):route('gallery.store')}}" id="myForm">
+                    <form method="POST" action="{{(@$dataGallery)?route('gallery.update', $dataGallery->id):route('gallery.store')}}" id="myForm">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
@@ -65,7 +65,7 @@
                             </div>
                             <br>
                             <div class="form-group col-md-6">
-                              <button type="submit" class="btn btn-primary">{{(@$editData)?'Update':'Submit'}}</button>
+                              <button type="submit" class="btn btn-primary">{{(@$dataGallery)?'Update':'Submit'}}</button>
                             </div>
                         </div>
                     </form>          

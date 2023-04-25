@@ -42,7 +42,7 @@
                                         <th>Description</th>
                                         <th>Image</th>
                                         <th>Action</th>
-                                    </tr>
+                                    </tr> 
                                 </thead>
                                 <tbody id="service_table">
                                     @foreach($dataGallery as $key => $gallery)
