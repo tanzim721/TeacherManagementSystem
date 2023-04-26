@@ -1,9 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-info ">
     <a class="navbar-brand" href="{{url('/')}}"> <img class="ml-5 brand-logo" src="{{asset('images/pust logo.png')}}" alt=""> </a>
+    {{-- <h5>Pabna University of Science and Technology</h5> --}}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav col-lg-11">
             <li class="nav-item ">
                 {{-- <a class="nav-link text-bold" href="{{url('/')}}">HOME</a> --}}
