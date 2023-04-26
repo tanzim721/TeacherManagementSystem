@@ -19,10 +19,13 @@ Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
 
 
 // Route::prefix('gallery')->group(function(){
-    Route::get('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
-    Route::get('/gallery/add', 'GalleryController@GallerAdd')->name('gallery.add');
+    Route::get('/gallery', 'GalleryController@view')->name('gallery.view');
+    // Route::get('/gallery/add', 'GalleryController@add')->name('gallery.add');
 // });
 
 
 //Teachers Details....................
 Route::get('/teachers', 'TeachersController@view')->name('teachers.view');
+
+
+///
