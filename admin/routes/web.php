@@ -29,12 +29,12 @@ Route::POST('/services/delete/{id}', 'ServiceController@Delete')->name('services
 // Route::get('/getServicesData', 'ServiceController@getServicesData');
 
 //Gallery................
-Route::GET('/gallery', 'GalleryController@GalleryIndex')->name('gallery.view');
-Route::GET('/gallery/add', 'GalleryController@GalleryAdd')->name('gallery.add');
-Route::POST('/gallery/store', 'GalleryController@GalleryStore')->name('gallery.store');
-Route::GET('/gallery/edit/{id}', 'GalleryController@GalleryEdit')->name('gallery.edit');
-Route::POST('/gallery/update/{id}', 'GalleryController@GalleryUpdate')->name('gallery.update');
-Route::POST('/gallery/delete/{id}', 'GalleryController@GalleryDelete')->name('gallery.delete');
+Route::GET('/gallery', 'GalleryController@Index')->name('gallery.view');
+Route::GET('/gallery/add', 'GalleryController@Add')->name('gallery.add');
+Route::POST('/gallery/store', 'GalleryController@Store')->name('gallery.store');
+Route::GET('/gallery/edit/{id}', 'GalleryController@Edit')->name('gallery.edit');
+Route::POST('/gallery/update/{id}', 'GalleryController@Update')->name('gallery.update');
+Route::POST('/gallery/delete/{id}', 'GalleryController@Delete')->name('gallery.delete');
 
 //Teachers List.................
 Route::GET('/teachers', 'TeachersController@Index')->name('teachers.view');

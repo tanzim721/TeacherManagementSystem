@@ -85,7 +85,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="image">Image</label>
-                                <input type="file" name="image" class="form-control">
+                                <input type="file" name="image" class="form-control p-1">
                             </div>
                             <div class="form-group col-md-6">
                               <button type="submit" class="btn btn-primary">{{(@$allData)?'Update':'Submit'}}</button>
