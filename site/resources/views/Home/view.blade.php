@@ -28,7 +28,7 @@
         <div class="col-md-8">
             <ul class="nav homeUnderText pl-5">
                 <li class="nav-item ">
-                    <a data-toggle="tab" href="#Objectives" class="text-black text-bold nav-link active">Program outline</a>
+                    <a data-toggle="tab" href="#Objectives" class="text-black text-bold nav-link active program">Program outline</a>
                 </li>
                 <li class="nav-item">
                     <a data-toggle="tab" href="#CourseList" class="text-black text-bold nav-link">Course List</a>

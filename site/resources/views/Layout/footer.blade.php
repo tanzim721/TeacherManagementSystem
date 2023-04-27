@@ -38,7 +38,7 @@
         </div>
            
     </div>
-    <footer class="main-footer ">
+    <footer class="main-footer">
         <strong>Copyright &copy; <?php echo "2010-".date("Y"); ?> <a href="#">ICE Association</a> </strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
