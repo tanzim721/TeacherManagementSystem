@@ -29,7 +29,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="text-bold">Teachers List</h4>
-                            Ekhane ekta problem: 1.delete kaj korteche na
+                            {{-- Ekhane ekta problem: 1.delete kaj korteche na --}}
                             <a class="btn btn-success float-right btn-sm" href="{{route('teachers.add')}}"><i class="fa fa-plus-circle"></i> Add Teachers</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">
@@ -49,7 +49,7 @@
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-                                <tbody id="teachers_models">
+                                <tbody id="teachers_list_models">
                                     @foreach($allData as $key => $teachers)
                                     <tr>
                                         <td>{{$key+1}}.</td>

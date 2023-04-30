@@ -40,7 +40,7 @@
                     
                   </div><!-- /.card-header -->
                   <div class="card-body">
-                    <form method="POST" action="{{route('teachers.update', $editData->id)}}" id="myForm">
+                    <form method="POST" action="{{route('teachers.update', $editData->id)}}" id="myForm" enctype="multipart/form-data">
                       @csrf
                       <div class="form-row">
                         <div class="form-group col-md-4">

@@ -28,7 +28,7 @@
           <div class="container-fluid">
             
             <!-- /.row -->
-            <!-- Main row -->
+            <!-- Main row --> 
             <div class="row">
               <!-- Left col -->
               <section class="col-md-12 connectedSortable">
@@ -40,22 +40,22 @@
                     
                   </div><!-- /.card-header -->
                   <div class="card-body">
-                    <form method="POST" action="{{route('gallery.update', $allData->id)}}" id="myForm">
+                    <form method="POST" action="{{route('gallery.update', $allData->id)}}" id="myForm" enctype="multipart/form-datas">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
                                 <label for="name" >Picture Name</label>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" value="{{$allData->gallery_name}}" name="name" class="form-control">
                                 <font style="color:red">{{($errors->has('gallery_name'))?($errors->first('gallery_name')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="name" >Description</label>
-                                <input type="text" name="designation" class="form-control">
+                                <input type="text" value="{{$allData->gallery_des}} name="designation" class="form-control">
                                 <font style="color:red">{{($errors->has('gallery_des'))?($errors->first('gallery_des')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="image">Image</label>
-                                <input type="file" name="image" class="form-control p-1">
+                                <input type="file" value="{{$allData->gallery_image}} name="image" class="form-control p-1">
                                 <font style="color:red">{{($errors->has('gallery_image'))?($errors->first('gallery_image')):''}}</font>
                             </div>
                             <div class="form-group col-md-6">

@@ -24,7 +24,7 @@ class TeachersController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'image' => 'required',
-            'email' => 'required|unique:teachers_models,email'
+            'email' => 'required|unique:teachers_list_models,email'
         ]);
         $data = new TeachersListModel();
         $data->name = $request->name;
@@ -56,6 +56,6 @@ class TeachersController extends Controller
     public function Delete(Request $request, $id){
         $data = TeachersListModel::find($id);
         $data->delete();
-        return redirect()->route('Teachers.view')->with('success','Data Delete Successfully');
+        return redirect()->route('teachers.view')->with('success','Data Delete Successfully');
     }
 }
