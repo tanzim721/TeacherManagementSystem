@@ -22,11 +22,11 @@ class GalleryController extends Controller
     }
     public function Store(Request $request){
         // dd('ok');
-        $this->validate($request, [
-            'gallery_name' => 'required',
-            'gallery_des' => 'required',
-            'gallery_image' => 'required:gallery_image, gallery_models,'
-        ]);
+        // $this->validate($request, [
+        //     'gallery_name' => 'required',
+        //     'gallery_des' => 'required',
+        //     'gallery_image' => 'required:gallery_models, gallery_image'
+        // ]);
         $data = new GalleryModel();
         $data->gallery_name = $request->gallery_name;
         $data->gallery_des = $request->gallery_des;
@@ -35,8 +35,8 @@ class GalleryController extends Controller
         return redirect()->route('gallery.view')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
-        $allData = GalleryModel::find($id);
-        return view('gallery.view', compact('allData'));
+        $editData = GalleryModel::find($id);
+        return view('gallery.view', compact('editData'));
     }
     public function Update(Request $request, $id){
         $data = GalleryModel::find($id);

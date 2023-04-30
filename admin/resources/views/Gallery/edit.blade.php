@@ -40,26 +40,26 @@
                     
                   </div><!-- /.card-header -->
                   <div class="card-body">
-                    <form method="POST" action="{{route('gallery.update', $allData->id)}}" id="myForm" enctype="multipart/form-datas">
+                    <form method="POST" action="{{route('gallery.update', $editData->id)}}" id="myForm" enctype="multipart/form-datas">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
                                 <label for="name" >Picture Name</label>
-                                <input type="text" value="{{$allData->gallery_name}}" name="name" class="form-control">
+                                <input type="text" value="{{$editData->gallery_name}}" name="name" class="form-control">
                                 <font style="color:red">{{($errors->has('gallery_name'))?($errors->first('gallery_name')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="name" >Description</label>
-                                <input type="text" value="{{$allData->gallery_des}} name="designation" class="form-control">
+                                <input type="text" value="{{$editData->gallery_des}} name="designation" class="form-control">
                                 <font style="color:red">{{($errors->has('gallery_des'))?($errors->first('gallery_des')):''}}</font>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="image">Image</label>
-                                <input type="file" value="{{$allData->gallery_image}} name="image" class="form-control p-1">
+                                <input type="file" value="{{$editData->gallery_image}} name="image" class="form-control p-1">
                                 <font style="color:red">{{($errors->has('gallery_image'))?($errors->first('gallery_image')):''}}</font>
                             </div>
                             <div class="form-group col-md-6">
-                                <button type="submit" class="btn btn-primary">{{(@$allData)?'Update':'Submit'}}</button>
+                                <button type="submit" class="btn btn-primary">{{(@$editData)?'Update':'Submit'}}</button>
                             </div>
                         </div>
                     </form>          
