@@ -29,4 +29,5 @@ Route::get('/teachers', 'TeachersController@view')->name('teachers.view');
 
 //Notice 
 Route::get('/notice', 'NoticeController@view')->name('notice.view');
-Route::POST('/notice/download{file}', 'NoticeController@Download')->name('notice.download');
+Route::get('/notice/download{file}', 'NoticeController@Download')->name('notice.download');
+Route::get('/notice/view{id}', 'NoticeController@pdfView')->name('notice.pdf.view');
