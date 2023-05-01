@@ -51,8 +51,8 @@
                                         <td>{{$key+1}}.</td>
                                         <td>{{$notice->name}}</td>
                                         <td>{{$notice->des}}</td>
-                                        <a href=""><td>{{$notice->file}}</td></a>
-                                        <td>{{$notice->time}}</td>
+                                        <td>{{$notice->file}}</td>
+                                        <td>{{$notice->created_at}}</td>
                                         <td>
                                             <a href="{{route('notice.edit', $notice->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
                                             <a href="{{route('notice.delete', $notice->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>

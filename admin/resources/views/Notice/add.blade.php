@@ -69,8 +69,7 @@
                                         <input type="time" name="time" class="form-control">
                                         <font style="color:red">{{($errors->has('time'))?($errors->first('time')):''}}</font>
                                     </div> 
-                                    <br>
-                                    <div class="form-group col-md-9 text-center pl-5">
+                                    <div class="form-group col-md-9">
                                         <button type="submit" class="btn btn-primary">{{(@$allData)?'Update':'Submit'}}</button>
                                     </div>
                                 </div>

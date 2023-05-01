@@ -50,13 +50,14 @@ class NoticeController extends Controller
     }
     public function Update(Request $request, $id){
         $data = noticeModel::find($id);
-        $data->name = $request->name;   
-        $data->email = $request->email;
-        $data->phone = $request->phone;
-        $data->gender = $request->gender;
-        $data->dateOfBirth = $request->dateOfBirth;
-        $data->designation = $request->designation;
-        $data->image = $request->image;
+        $data->name = $request->name;
+        $data->des = $request->des;
+        $data->time = $request->time;
+        // $data->file = $request->file;
+        $file = $request->file;
+        $filename = time().'.'.$file->getClientOriginalExtension();
+        $request->file->move('assets',$filename);
+        $data->file = $filename;
         $data->save();
         return redirect()->route('notice.view')->with('success','Data Update Successfully');
     }

@@ -27,5 +27,5 @@ Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
 //Teachers Details....................
 Route::get('/teachers', 'TeachersController@view')->name('teachers.view');
 
-
-///
+//Notice 
+Route::GET('/notice', 'NoticeController@view')->name('notice.view');
