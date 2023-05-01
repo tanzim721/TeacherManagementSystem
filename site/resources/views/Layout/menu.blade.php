@@ -36,7 +36,7 @@
             <li class="dropdown">
                 <a href="" class="pt-5 dropbtn">ANNOUNCEMENTS</a>
                 <div class="dropdown-content">
-                    <a href="" class="text-bold">Overview</a>
+                    <a href="{{route('notice.view')}}" class="text-bold">Notice</a>
                     <a href="" class="text-bold">Overview</a>
                     <a href="" class="text-bold" >Overview</a>
                 </div>

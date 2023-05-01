@@ -28,4 +28,5 @@ Route::get('/service', 'ServiceController@ServiceIndex')->name('service.view');
 Route::get('/teachers', 'TeachersController@view')->name('teachers.view');
 
 //Notice 
-Route::GET('/notice', 'NoticeController@view')->name('notice.view');
+Route::get('/notice', 'NoticeController@view')->name('notice.view');
+Route::POST('/notice/download{file}', 'NoticeController@Download')->name('notice.download');
