@@ -48,6 +48,7 @@ Route::GET('/teachers/delete/{id}', 'TeachersController@Delete')->name('teachers
 Route::GET('/notice', 'NoticeController@Index')->name('notice.view');
 Route::GET('/notice/add', 'NoticeController@Add')->name('notice.add');
 Route::POST('/notice/store', 'NoticeController@Store')->name('notice.store');
+Route::POST('/notice/download{file}', 'NoticeController@Download')->name('notice.download');
 Route::GET('/notice/edit/{id}', 'NoticeController@Edit')->name('notice.edit');
 Route::POST('/notice/update/{id}', 'NoticeController@Update')->name('notice.update');
 Route::GET('/notice/delete/{id}', 'NoticeController@Delete')->name('notice.delete');

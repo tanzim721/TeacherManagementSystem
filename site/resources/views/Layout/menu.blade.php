@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-info ">
-    <a class="navbar-brand" href="{{url('/')}}"> <img class="ml-5 brand-logo" src="{{asset('images/pust logo.png')}}" alt=""> </a>
-    {{-- <h5>Pabna University of Science and Technology</h5> --}}
+    <a class="navbar-brand" href="{{url('/')}}"> <img class="ml-2 brand-logo" src="{{asset('images/pust logo.png')}}" alt=""> </a>
+    <a class="dropbtn text-white">Pabna University of Science and Technology</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon text-danger"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav col-lg-11">
@@ -10,9 +10,9 @@
                 {{-- <a class="nav-link text-bold" href="{{url('/')}}">HOME</a> --}}
                 <a href="{{url('/')}}" class="pt-5 dropbtn">HOME</a>
             </li>
-            <li class="dropdown">
-                <a href="" class="pt-5 dropbtn">ABOUT</a>
-                {{-- <i class="fa fa-angle-down"></i> --}}
+            <li class="dropdown">  
+                <a href="" class="pt-5 dropbtn">ABOUT</a>   
+                {{-- <i class="fa fa-angle-down"></i> --}} 
                 <div class="dropdown-content">
                     <a href="" class="text-bold">Overview</a>
                     <a href="" class="text-bold">Overview</a>

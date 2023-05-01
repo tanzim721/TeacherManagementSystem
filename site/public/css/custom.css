@@ -4,8 +4,8 @@ body{
     padding: 0px;
 }
 .brand-logo{
-    width: 60px;
-    height: 70px;
+    width: 55px;
+    height: 65px;
     border-radius: 5px;
 }
 .nav-link{
@@ -93,14 +93,18 @@ body{
     background: linear-gradient(90deg, rgb(162, 126, 245) 0% , rgb(234, 234, 239)35%, rgb(19, 196, 231)100%);
 } */
 
-
+#navbarNav{
+    font-size: 15px;
+    color: black;
+}
 .dropbtn {
     /* background-color: #4CAF50; */
     color: black;
-    padding: 16px;
-    font-size: 19px;
+    padding: 12px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
   
   /* The container <div> - needed to position the dropdown content */
