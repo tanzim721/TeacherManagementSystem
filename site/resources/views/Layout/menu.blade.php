@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-info ">
+<nav class="navbar navbar-expand-lg navbar-info okOk">
     <a class="navbar-brand" href="{{url('/')}}"> <img class="ml-2 brand-logo" src="{{asset('images/pust logo.png')}}" alt=""> </a>
     <a class="dropbtn text-white">Pabna University of Science and Technology</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

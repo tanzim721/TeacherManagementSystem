@@ -46,9 +46,9 @@ class NoticeController extends Controller
         $editData = noticeModel::find($id);
         return view('Notice.edit', compact('editData'));
     }
-    public function Download(Request $request, $file){
-        return response()->download(public_path('assets/'.$file));
-    }
+    // public function Download(Request $request, $file){
+    //     return response()->download(public_path('assets/'.$file));
+    // }
     public function Update(Request $request, $id){
         $data = noticeModel::find($id);
         $data->name = $request->name;

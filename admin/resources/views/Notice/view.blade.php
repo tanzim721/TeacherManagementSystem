@@ -42,7 +42,7 @@
                                         <th>Description</th>
                                         <th>Uploaded file</th>
                                         <th>Time</th>
-                                        <th>Action</th>
+                                        <th>Edit and Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody id="notice_list_models">

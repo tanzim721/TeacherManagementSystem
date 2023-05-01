@@ -13,7 +13,7 @@ class NoticeController extends Controller
 {
     function view(){
         // dd('ok');
-        $allData = noticeModel::all();
+        $allData = noticeModel::orderBy('id', 'desc')->take(50)->get();
         return view('Notice', [ 'allData' =>$allData]);
     }
     public function Download(Request $request, $file){

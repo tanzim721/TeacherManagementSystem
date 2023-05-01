@@ -13,18 +13,6 @@ body{
     font-weight: bold;
 }
 
-/* .banner{
-    background-image: url('/images/banner.webp');
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-/* .bannerText{
-    margin-top: 150px;
-} */
-
 .banner{
     max-height: 550px;
     background-attachment: fixed;
@@ -54,6 +42,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(9, 9, 9);
+    /* position: fixed; */
     
 }
 .optimizeDiv{
@@ -85,17 +74,12 @@ body{
     background-color: whitesmoke;
 }
 
-/* .wrapper{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(90deg, rgb(162, 126, 245) 0% , rgb(234, 234, 239)35%, rgb(19, 196, 231)100%);
-} */
-
 #navbarNav{
     font-size: 15px;
     color: black;
+}
+.okOk{
+  position: fixed;
 }
 .dropbtn {
     /* background-color: #4CAF50; */
@@ -144,4 +128,28 @@ body{
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
     background-color: none;
+  }
+
+
+  /* notice board */
+  form.exampleNotice input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.exampleNotice button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 5px;
   }
