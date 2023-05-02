@@ -21,10 +21,10 @@
 <div class="container ">
     <h2 class="text-center p-3 text-bold">@yield('page_name')</h2>
     <div class="row ">
-        <form class="exampleNotice pb-2" action="/action_page.php">
+        {{-- <form class="exampleNotice pb-2" action="/action_page.php">
             <input type="text" placeholder="Search" name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+        </form> --}}
         <table class="table table-striped">
             <tbody>
                 @foreach($allData as $key => $notice)

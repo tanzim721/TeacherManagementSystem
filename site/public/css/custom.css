@@ -35,8 +35,8 @@ body{
     background-color: rgb(253, 253, 253);
 } */
 .backBanner{
-    background-image: url('/pust lake.jpg');
-    max-height: 450px;
+    background-image: url('/ICE.JPG');
+    max-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

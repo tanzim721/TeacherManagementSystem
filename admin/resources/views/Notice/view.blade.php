@@ -38,10 +38,10 @@
                                 <thead>
                                     <tr>
                                         <th>SN.</th> 
-                                        <th>Name</th>
+                                        <th>Notice Title</th>
                                         <th>Description</th>
                                         <th>Uploaded file</th>
-                                        <th>Time & Date</th>
+                                        <th>Published</th>
                                         <th>Edit and Delete</th>
                                     </tr>
                                 </thead>
