@@ -30,7 +30,7 @@
                 @foreach($allData as $key => $notice)
                     <tr>
                         <td>
-                            <p class="fa fa-calendar"> {{$notice->created_at}}</p>
+                            <p class="fa fa-calendar"> {{$notice->time}}</p>
                             <p class="">{{$notice->des}}</p>    
                         </td>
                         <td><a class="btn" href="{{route('notice.pdf.view', $notice->id)}}">View</a></td>

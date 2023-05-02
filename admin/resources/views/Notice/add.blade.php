@@ -4,7 +4,6 @@
 
 @section('content')
     @section('page_name', 'Noctice')
-    
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
@@ -64,11 +63,17 @@
                                         <input type="file" name="file" class="form-control">
                                         <font style="color:red">{{($errors->has('file'))?($errors->first('file')):''}}</font>
                                     </div> 
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-4" id='datetimepicker2'>
                                         <label for="time" >Time and Date</label>
-                                        <input type="time" name="time" class="form-control">
+                                        <input type="datetime-local" name="time" class="form-control">
                                         <font style="color:red">{{($errors->has('time'))?($errors->first('time')):''}}</font>
                                     </div> 
+                                    {{-- <div class='input-group date col-md-4' id='datetimepicker2'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                     </div> --}}
                                     <div class="form-group col-md-9">
                                         <button type="submit" class="btn btn-primary">{{(@$allData)?'Update':'Submit'}}</button>
                                     </div>
@@ -87,7 +92,7 @@
       </div> 
 
     
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
       $(function () {
       $.validator.setDefaults({
           submitHandler: function () {
@@ -134,6 +139,13 @@
           }
           });
       });
-    </script>
+    </script> --}}
+    {{-- <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker2').datetimepicker({
+                locale: 'ru'
+            });
+        });
+    </script> --}}
 
 @endsection
