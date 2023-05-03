@@ -14,7 +14,7 @@ use DB;
 class SessionController extends Controller
 {
     public function Index(){
-        dd('ok');
+        // dd('ok');
         $allData = SessionModel::all();
         return view('Session', [ 'allData' =>$allData]);
     }
@@ -24,18 +24,10 @@ class SessionController extends Controller
     public function Store(Request $request){
         // dd('ok');
         $this->validate($request, [
-            'name' => 'required',
-            'image' => 'required',
-            'email' => 'required|unique:session_list_models,email'
+            'session' => 'required|unique:session_models,session'
         ]);
         $data = new SessionModel();
-        $data->name = $request->name;
-        $data->email = $request->email;
-        $data->phone = $request->phone;
-        $data->gender = $request->gender;
-        $data->dateOfBirth = $request->dateOfBirth;
-        $data->designation = $request->designation;
-        $data->image = $request->image;
+        $data->session = $request->session;
         $data->save();
         return redirect()->route('session.view')->with('success', 'Data Inserted Successfully');
     }
@@ -45,13 +37,7 @@ class SessionController extends Controller
     }
     public function Update(Request $request, $id){
         $data = SessionModel::find($id);
-        $data->name = $request->name;   
-        $data->email = $request->email;
-        $data->phone = $request->phone;
-        $data->gender = $request->gender;
-        $data->dateOfBirth = $request->dateOfBirth;
-        $data->designation = $request->designation;
-        $data->image = $request->image;
+        $data->session = $request->session;
         $data->save();
         return redirect()->route('session.view')->with('success','Data Update Successfully');
     }
