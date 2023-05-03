@@ -22,7 +22,7 @@
         </li> 
         <li class="nav-item">
             <a href="{{route('visitor')}}" class="nav-link"> 
-                <i class="nav-icon fas fa-users"></i> 
+                <i class="nav-icon fas fa-eye"></i> 
                 <p> Visitor
                     <i class="fas fa-angle-left right"></i>
                 </p>
@@ -64,6 +64,14 @@
             <a href="{{route('session.view')}}" class="nav-link"> 
                 <i class="nav-icon fa fa-users" aria-hidden="true"></i> 
                 <p> Session
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+        </li> 
+        <li class="nav-item">
+            <a href="{{route('ctandassignament.view')}}" class="nav-link"> 
+                <i class="nav-icon fa fa-check" aria-hidden="true"></i>
+                <p> CT or Assignament
                     <i class="fas fa-angle-left right"></i>
                 </p>
             </a>

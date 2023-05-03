@@ -61,3 +61,11 @@ Route::GET('/session/edit/{id}', 'SessionController@Edit')->name('session.edit')
 Route::POST('/session/update/{id}', 'SessionController@Update')->name('session.update');
 Route::GET('/session/delete/{id}', 'SessionController@Delete')->name('session.delete');
 
+//CT and Assignment
+Route::GET('/ctandassignament', 'CTandAssignment@Index')->name('ctandassignament.view');
+Route::GET('/ctandassignament/add', 'CTandAssignment@Add')->name('ctandassignament.add');
+Route::POST('/ctandassignament/store', 'CTandAssignment@Store')->name('ctandassignament.store');
+Route::GET('/ctandassignament/edit/{id}', 'CTandAssignment@Edit')->name('ctandassignament.edit');
+Route::POST('/ctandassignament/update/{id}', 'CTandAssignment@Update')->name('ctandassignament.update');
+Route::GET('/ctandassignament/delete/{id}', 'CTandAssignment@Delete')->name('ctandassignament.delete');
+

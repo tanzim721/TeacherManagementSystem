@@ -18,7 +18,7 @@
         </div>       
     </div>
 </div>
-<div class="container pb-3">
+<div class="mx-5 pb-3">
     <h4 class="text-center pb-3 text-bold">@yield('page_name')</h4>
     <div class="row ">
         {{-- <form class="exampleNotice pb-2" action="/action_page.php">
@@ -33,7 +33,7 @@
                             <p class="fa fa-calendar"> {{$notice->time}}</p>
                             <p class="">{{$notice->des}}</p>    
                         </td>
-                        <td><a class="btn" href="{{route('notice.pdf.view', $notice->id)}}">View</a></td>
+                        <td><a class="btn btn-danger" href="{{route('notice.pdf.view', $notice->id)}}">View</a></td>
                         {{-- <td><a class="btn" href="{{route('notice.download', $notice->file)}}">Download</a></td> --}}
                     </tr>
                 @endforeach

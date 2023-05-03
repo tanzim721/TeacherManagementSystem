@@ -8,9 +8,7 @@
                 <a href="">Link 3</a><br>
                 <a href="">Link 4</a><br>
             </div>
-            
-        </div>
-       
+        </div>       
         <div class="col-md-4">
             <h3>More Information</h3>
             <div class="pl-3">
@@ -19,7 +17,6 @@
                 <a href="">Link 3</a><br>
                 <a href="">Link 4</a><br>
             </div>
-           
         </div>
         <div class="col-md-4">
             <div class="row pb-2">
