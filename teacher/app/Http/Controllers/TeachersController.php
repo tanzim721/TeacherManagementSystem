@@ -11,7 +11,7 @@ use DB;
 
 class TeachersController extends Controller
 {
-    function Index(){
+    public function Index(){
         // dd('ok');
         $allData = TeachersListModel::all();
         return view('Teachers', [ 'allData' =>$allData]);

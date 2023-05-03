@@ -43,12 +43,8 @@ Route::POST('/teachers/store', 'TeachersController@Store')->name('teachers.store
 Route::get('/teachers/edit/{id}', 'TeachersController@Edit')->name('teachers.edit');
 Route::POST('/teachers/update/{id}', 'TeachersController@Update')->name('teachers.update');
 Route::POST('/teachers/delete/{id}', 'TeachersController@Delete')->name('teachers.delete');
-
-
+ 
 //calender............
 Route::get('/tasks-schedule', 'CalenderController@index')->name('tasks.view');
 Route::get('/tasks-schedule-store', 'CalenderController@calendarEvents')->name('task.store');
 
-
-  
- 

@@ -7,26 +7,28 @@ use App\VisitorModel;
 use App\ServicesModel;
 use App\GalleryModel;
 use App\TeachersListModel;
+use App\SessionModel;
 use DB;
 
-class TeachersController extends Controller
+
+class SessionController extends Controller
 {
     public function Index(){
-        // dd('ok');
-        $allData = TeachersListModel::all();
-        return view('Teachers', [ 'allData' =>$allData]);
+        dd('ok');
+        $allData = SessionModel::all();
+        return view('Session', [ 'allData' =>$allData]);
     }
     public function Add(){
-        return view('Teachers.add');
+        return view('Session.add');
     }
     public function Store(Request $request){
         // dd('ok');
         $this->validate($request, [
             'name' => 'required',
             'image' => 'required',
-            'email' => 'required|unique:teachers_list_models,email'
+            'email' => 'required|unique:session_list_models,email'
         ]);
-        $data = new TeachersListModel();
+        $data = new SessionModel();
         $data->name = $request->name;
         $data->email = $request->email;
         $data->phone = $request->phone;
@@ -35,14 +37,14 @@ class TeachersController extends Controller
         $data->designation = $request->designation;
         $data->image = $request->image;
         $data->save();
-        return redirect()->route('teachers.view')->with('success', 'Data Inserted Successfully');
+        return redirect()->route('session.view')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
-        $editData = TeachersListModel::find($id);
-        return view('Teachers.edit', compact('editData'));
+        $editData = SessionModel::find($id);
+        return view('Session.edit', compact('editData'));
     }
     public function Update(Request $request, $id){
-        $data = TeachersListModel::find($id);
+        $data = SessionModel::find($id);
         $data->name = $request->name;   
         $data->email = $request->email;
         $data->phone = $request->phone;
@@ -51,11 +53,11 @@ class TeachersController extends Controller
         $data->designation = $request->designation;
         $data->image = $request->image;
         $data->save();
-        return redirect()->route('teachers.view')->with('success','Data Update Successfully');
+        return redirect()->route('session.view')->with('success','Data Update Successfully');
     }
     public function Delete(Request $request, $id){
-        $data = TeachersListModel::find($id);
+        $data = SessionModel::find($id);
         $data->delete();
-        return redirect()->route('teachers.view')->with('success','Data Delete Successfully');
+        return redirect()->route('session.view')->with('success','Data Delete Successfully');
     }
 }

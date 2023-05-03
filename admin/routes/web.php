@@ -52,5 +52,11 @@ Route::POST('/notice/store', 'NoticeController@Store')->name('notice.store');
 Route::GET('/notice/edit/{id}', 'NoticeController@Edit')->name('notice.edit');
 Route::POST('/notice/update/{id}', 'NoticeController@Update')->name('notice.update');
 Route::GET('/notice/delete/{id}', 'NoticeController@Delete')->name('notice.delete');
-    
 
+//Session......
+Route::GET('/session', 'SessionController@Index')->name('session.view');
+Route::GET('/session/add', 'SessionController@Add')->name('session.add');
+Route::POST('/session/store', 'SessionController@Store')->name('session.store');
+Route::GET('/session/edit/{id}', 'SessionController@Edit')->name('session.edit');
+Route::POST('/session/update/{id}', 'SessionController@Update')->name('session.update');
+Route::GET('/session/delete/{id}', 'SessionController@Delete')->name('session.delete');
