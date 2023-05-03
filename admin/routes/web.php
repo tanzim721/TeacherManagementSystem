@@ -60,3 +60,4 @@ Route::POST('/session/store', 'SessionController@Store')->name('session.store');
 Route::GET('/session/edit/{id}', 'SessionController@Edit')->name('session.edit');
 Route::POST('/session/update/{id}', 'SessionController@Update')->name('session.update');
 Route::GET('/session/delete/{id}', 'SessionController@Delete')->name('session.delete');
+

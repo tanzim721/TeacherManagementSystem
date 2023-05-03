@@ -22,7 +22,8 @@ class NoticeController extends Controller
     public function pdfView(Request $request, $id){
         // dd('ok');
         $allData = noticeModel::find($id);
-        return view('ViewPDF', ['allData' => $allData]);
+        $allData2 = noticeModel::orderBy('id', 'desc')->take(50)->get();
+        return view('ViewPDF', ['allData' => $allData],['allData2'=>$allData2]);
     }
     
 }

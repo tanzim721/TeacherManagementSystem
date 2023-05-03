@@ -10,16 +10,16 @@
                 {{-- <h5 class="top-banner-title text-justify text-bold">Pabna University of Science and Technology</h5> --}}
             </div> 
             <div class="col-md-12 bannerUnderText">
-                <a href="{{url('/')}}" class="text-center bannerUnderText ">Home</a> |
-                <a href="" class="text-center bannerUnderText">Notice</a>
+                <a href="{{route('home')}}" class="text-center bannerUnderText ">Home</a> |
+                <a href="{{route('notice.view')}}" class="text-center bannerUnderText">Notice</a>
                 {{-- <a href="" class="text-center bannerUnderText">Information and Communication Engineering(ICE)</a><br> --}}
                 {{-- <a target="__blank" href="https://pust.ac.bd/" class="text-center bannerUnderText">Pabna University of Science and Technology</a> --}}
             </div>
         </div>       
     </div>
 </div>
-<div class="container ">
-    <h2 class="text-center p-3 text-bold">@yield('page_name')</h2>
+<div class="container pb-3">
+    <h4 class="text-center pb-3 text-bold">@yield('page_name')</h4>
     <div class="row ">
         {{-- <form class="exampleNotice pb-2" action="/action_page.php">
             <input type="text" placeholder="Search" name="search">

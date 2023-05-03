@@ -1,4 +1,3 @@
-
 <div class="form-inline">
     <div class="input-group" data-widget="sidebar-search">
         <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
@@ -44,24 +43,7 @@
                 </li>
             </ul> --}}
         </li>
-        {{-- <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-calendar"></i> 
-                <p>
-                    Class Time
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-calendar"></i> 
-                <p>
-                    Attendance
-                    <i class="fas fa-angle-left right"></i>
-                </p>
-            </a>
-        </li> --}}
+       
     </ul>
 </nav>
 <!-- /.sidebar-menu
