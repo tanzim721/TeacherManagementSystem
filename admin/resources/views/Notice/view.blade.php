@@ -42,7 +42,8 @@
                                         <th>Description</th>
                                         <th>Uploaded file</th>
                                         <th>Published</th>
-                                        <th>Edit and Delete</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody id="notice_list_models">
@@ -55,6 +56,8 @@
                                         <td>{{$notice->time}}</td>
                                         <td>
                                             <a href="{{route('notice.edit', $notice->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
+                                        </td>
+                                        <td>
                                             <a href="{{route('notice.delete', $notice->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>

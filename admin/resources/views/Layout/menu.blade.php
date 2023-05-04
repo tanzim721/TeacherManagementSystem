@@ -70,7 +70,7 @@
         </li> 
         <li class="nav-item">
             <a href="{{route('ctandassignament.view')}}" class="nav-link"> 
-                <i class="nav-icon fa fa-check" aria-hidden="true"></i>
+                <i class="nav-icon fa fa-sort-numeric-down" aria-hidden="true"></i>
                 <p> CT or Assignament
                     <i class="fas fa-angle-left right"></i>
                 </p>
