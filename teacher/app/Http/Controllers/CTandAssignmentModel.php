@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ServicesModel extends Model
+class CTandAssignmentModel extends Model
 {
-    public $table='services';
+    public $table='c_tand_assignment_models';
     public $primaryKey='id';
     public $incrementing=true;
     public $keyType='int';
