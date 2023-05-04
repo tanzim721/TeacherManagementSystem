@@ -76,7 +76,15 @@
                 </p>
             </a>
         </li> 
-        
+        <li class="nav-item">
+            <a href="{{route('roll.view')}}" class="nav-link"> 
+                <i class="nav-icon fa fa-cash-register" aria-hidden="true"></i>
+                {{-- <i class="nav-icon fa fa-users" ></i>  --}}
+                <p> Roll
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+        </li> 
     </ul>
 </nav>
 <!-- /.sidebar-menu

@@ -11,13 +11,12 @@ use App\SessionModel;
 use App\RollModel;
 use DB;
 
-
 class RollController extends Controller
 {
     public function Index(){
         // dd('ok');
         $allData = RollModel::all();
-        return view('Roll', [ 'allData' =>$allData]);
+        return view('Roll', [ 'allData' => $allData]);
     }
     public function Add(){
         return view('Roll.add');
