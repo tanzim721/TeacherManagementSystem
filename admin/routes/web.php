@@ -69,3 +69,11 @@ Route::GET('/ctandassignament/edit/{id}', 'CTandAssignment@Edit')->name('ctandas
 Route::POST('/ctandassignament/update/{id}', 'CTandAssignment@Update')->name('ctandassignament.update');
 Route::GET('/ctandassignament/delete/{id}', 'CTandAssignment@Delete')->name('ctandassignament.delete');
 
+//Roll.........
+Route::GET('/roll', 'RollController@Index')->name('roll.view');
+Route::GET('/roll/add', 'RollController@Add')->name('roll.add');
+Route::POST('/roll/store', 'RollController@Store')->name('roll.store');
+Route::GET('/roll/edit/{id}', 'RollController@Edit')->name('roll.edit');
+Route::POST('/roll/update/{id}', 'RollController@Update')->name('roll.update');
+Route::GET('/roll/delete/{id}', 'RollController@Delete')->name('roll.delete');
+
