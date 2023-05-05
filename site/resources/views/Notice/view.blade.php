@@ -25,21 +25,27 @@
             <input type="text" placeholder="Search" name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form> --}}
-        <table class="table table-striped">
-            <tbody>
-                @foreach($allData as $key => $notice)
-                    <tr>
-                        <td>
-                            <p class="fa fa-calendar"> {{$notice->time}}</p>
-                            <p class="">{{$notice->des}}</p>    
-                        </td>
-                        <td><a class="btn btn-danger" href="{{route('notice.pdf.view', $notice->id)}}">View</a></td>
-                        {{-- <td><a class="btn" href="{{route('notice.download', $notice->file)}}">Download</a></td> --}}
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-        
+        <div class="col-md-9">
+            <table class="table table-striped">
+                <tbody>
+                    @foreach($allData as $key => $notice)
+                        <tr>
+                            <td>
+                                <p class="fa fa-calendar"> {{$notice->time}}</p>
+                                <p class="">{{$notice->des}}</p>    
+                            </td>
+                            <td><a class="btn btn-danger" href="{{route('notice.pdf.view', $notice->id)}}">View</a></td>
+                            {{-- <td><a class="btn" href="{{route('notice.download', $notice->file)}}">Download</a></td> --}}
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3 usefulLinkColor">
+            <table class="table">
+                <h5 class="pl-3 useful">USEFUL LINKS</h5>
+            </table>
+        </div>
     </div>
 </div>
 

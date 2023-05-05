@@ -22,7 +22,7 @@
 {{-- toggleable dynamic section starts --}}
 <div class="container-fluid pb-4 other-section wrapper">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 homeLeftSite">
 
         </div>
         <div class="col-md-8">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 homeRightSite">
 
         </div>
     </div>

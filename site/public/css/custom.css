@@ -153,3 +153,23 @@ body{
     cursor: pointer;
     border-radius: 5px;
   }
+
+  .useful{
+    font-family: italic;
+  }
+  .useful:hover{
+    text-decoration: underline;
+    text-decoration-color: #f40a60;
+    text-underline-offset: 8px;
+  }
+  .usefulLinkColor{
+    background-color: #cce2f5;
+  }
+  .homeRightSite{
+    background-color: #d9e6f1;
+    transform: skewY(30deg);
+  }
+  .homeLeftSite{
+    background-color: #d9e6f1;
+    transform: skewX(20deg);
+  }
