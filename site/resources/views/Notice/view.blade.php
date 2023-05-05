@@ -43,7 +43,20 @@
         </div>
         <div class="col-md-3 usefulLinkColor">
             <table class="table">
-                <h5 class="pl-3 useful">USEFUL LINKS</h5>
+                <h3 class="fa fa-paper-plane pl-5 pt-3"></h3>
+                <br>
+                <h5 class="p-3 useful text-bold">USEFUL LINKS</h5>
+                {{-- <i class="fa fa-forward pr-1" aria-hidden="true"></i> --}}
+                <a href="" class="fa fa-forward p-3"> Telephone and Email Index</a>
+                <br>
+                {{-- <i class="fa fa-forward p-3" aria-hidden="true"></i> --}}
+                <a href="" class="fa fa-forward p-3"> PUST Forms</a>
+                <br>
+                {{-- <i class="fa fa-forward p-3" aria-hidden="true"></i> --}}
+                <a href="" class="fa fa-forward p-3"> Events</a>
+                <br>
+                {{-- <i class="fa fa-forward p-3" aria-hidden="true"></i> --}}
+                <a href="" class="fa fa-forward p-3"> Contact Us</a>
             </table>
         </div>
     </div>

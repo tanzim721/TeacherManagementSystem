@@ -97,79 +97,94 @@ body{
     display: inline-block;
 }
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: none;
-  }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
 
 
-  /* notice board */
-  form.exampleNotice input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  form.exampleNotice button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+/* notice board */
+form.exampleNotice input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
 
-  .useful{
-    font-family: italic;
-  }
-  .useful:hover{
-    text-decoration: underline;
-    text-decoration-color: #f40a60;
-    text-underline-offset: 8px;
-  }
-  .usefulLinkColor{
-    background-color: #cce2f5;
-  }
-  .homeRightSite{
-    background-color: #d9e6f1;
-    transform: skewY(30deg);
-  }
-  .homeLeftSite{
-    background-color: #d9e6f1;
-    transform: skewX(20deg);
-  }
+form.exampleNotice button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* notice section */
+.useful{
+  font-family: italic;
+  color: black;
+}
+.useful:hover{
+  text-decoration: underline;
+  text-decoration-color: #f40a60;
+  text-underline-offset: 8px;
+}
+.usefulLinkColor{
+  background-color: #cee8ff;
+  /* transform: scale(1.1,1); */
+  transform: rotate(3deg);
+}
+.usefulLinkColor a{
+  color: rgb(16, 15, 15);
+}
+.usefulLinkColor a:hover{
+  color: rgb(255, 0, 0);
+
+}
+/* home section  */
+.homeRightSite{
+  background-color: #d9e6f1;
+  transform: skewY(30deg);
+}
+.homeLeftSite{
+  background-color: #d9e6f1;
+  transform: skewX(20deg);
+}
+
+
