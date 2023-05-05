@@ -19,5 +19,3 @@ use Illuminate\Support\Facades\Route;
     
 Route::get('/', 'HomeController@HomeIndex')->name('home');
 
-
-

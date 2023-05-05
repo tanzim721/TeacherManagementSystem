@@ -77,3 +77,12 @@ Route::GET('/roll/edit/{id}', 'RollController@Edit')->name('roll.edit');
 Route::POST('/roll/update/{id}', 'RollController@Update')->name('roll.update');
 Route::GET('/roll/delete/{id}', 'RollController@Delete')->name('roll.delete');
 
+
+//Course Code.........
+Route::GET('/coursecode', 'CourseCodeController@Index')->name('coursecode.view');
+Route::GET('/coursecode/add', 'CourseCodeController@Add')->name('coursecode.add');
+Route::POST('/coursecode/store', 'CourseCodeController@Store')->name('coursecode.store');
+Route::GET('/coursecode/edit/{id}', 'CourseCodeController@Edit')->name('coursecode.edit');
+Route::POST('/coursecode/update/{id}', 'CourseCodeController@Update')->name('coursecode.update');
+Route::GET('/coursecode/delete/{id}', 'CourseCodeController@Delete')->name('coursecode.delete');
+
