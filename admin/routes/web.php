@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-    
+
 Route::GET('/', 'HomeController@HomeIndex');
 Route::GET('/visitor', 'VisitorController@VisitorIndex')->name('visitor');
 
