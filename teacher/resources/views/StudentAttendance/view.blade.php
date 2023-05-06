@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Manage Roll</h1>
+                    <h1 class="m-0">Manage Student Attendance</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <!-- <ol class="breadcrumb float-sm-right">
@@ -28,9 +28,8 @@
                     <!-- Custom tabs (Charts with tabs)-->
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="text-bold">Roll List</h4>
-                            {{-- Ekhane ekta problem: 1.delete kaj korteche na --}}
-                            <a class="btn btn-success float-right btn-sm" href="{{route('roll.add')}}"><i class="fa fa-plus-circle"></i> Add Roll</a>
+                            <h4 class="text-bold">Student Attendance List</h4>
+                            <a class="btn btn-success float-right btn-sm" href="{{route('studentAttendance.add')}}"><i class="fa fa-plus-circle"></i> Add Student Attendance</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">
                             {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
@@ -39,18 +38,18 @@
                                 <thead>
                                     <tr>
                                         <th>SN.</th> 
-                                        <th>Roll</th>
+                                        <th>Student Attendance</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-                                <tbody id="roll_list_models">
-                                    @foreach($allData as $key => $roll)
+                                <tbody id="student_attendance_models">
+                                    @foreach($allData as $key => $studentAttendance)
                                     <tr>
                                         <td>{{$key+1}}.</td>
-                                        <td>{{$roll->roll}}</td>
+                                        <td>{{$studentAttendance->session}}</td>
                                         <td>
-                                            <a href="{{route('roll.edit', $roll->id)}}" class="btn btn-sm btn-primary" title="Edit"><i class="fa fa-edit"></i></a> 
-                                            <a href="{{route('roll.delete', $roll->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a>
+                                            <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="View"><i class="fa fa-eye"></i></a> 
+                                            {{-- <a href="{{route('studentAttendance.delete', $studentAttendance->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a> --}}
                                         </td>
                                     </tr>
                                     @endforeach 

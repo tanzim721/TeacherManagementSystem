@@ -19,35 +19,36 @@ class StudentAttendanceController extends Controller
         // dd('ok');
         // $allData = StudentAttendanceModel::all();
         // return view('Roll', [ 'allData' => $allData]);
-        $data['allData'] = RollModel::all();
-        return view('StudentAttendance.view',$data);
+        $data['allData'] = StudentAttendanceModel::all();
+        $data['allData'] = SessionModel::all();
+        return view('StudentAttendance',$data);
     }
     public function Add(){
-        return view('Roll.add');
+        return view('StudentAttendance.add');
     }
     public function Store(Request $request){
         // dd('ok');
         $this->validate($request, [
-            'roll' => 'required|unique:roll_models,roll'
+            'attendance_status' => 'required|unique:student_attendance_models,attendance_status'
         ]);
         $data = new StudentAttendanceModel();
-        $data->roll = $request->roll;
+        $data->attendance_status = $request->attendance_status;
         $data->save();
-        return redirect()->route('roll.view')->with('success', 'Data Inserted Successfully');
+        return redirect()->route('studentAttendance.view')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
         $editData = StudentAttendanceModel::find($id);
-        return view('Roll.edit', compact('editData'));
+        return view('StudentAttendance.edit', compact('editData'));
     }
     public function Update(Request $request, $id){
         $data = StudentAttendanceModel::find($id);
-        $data->roll = $request->roll;
+        $data->attendance_status = $request->attendance_status;
         $data->save();
-        return redirect()->route('roll.view')->with('success','Data Update Successfully');
+        return redirect()->route('studentAttendance.view')->with('success','Data Update Successfully');
     }
     public function Delete(Request $request, $id){
         $data = StudentAttendanceModel::find($id);
         $data->delete();
-        return redirect()->route('roll.view')->with('success','Data Delete Successfully');
+        return redirect()->route('studentAttendance.view')->with('success','Data Delete Successfully');
     }
 }
