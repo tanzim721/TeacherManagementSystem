@@ -16,9 +16,11 @@ use DB;
 class StudentAttendanceController extends Controller
 {
     public function Index(){
-        dd('ok');
-        $allData = StudentAttendanceModel::all();
-        return view('Roll', [ 'allData' => $allData]);
+        // dd('ok');
+        // $allData = StudentAttendanceModel::all();
+        // return view('Roll', [ 'allData' => $allData]);
+        $data['allData'] = RollModel::all();
+        return view('StudentAttendance.view',$data);
     }
     public function Add(){
         return view('Roll.add');
