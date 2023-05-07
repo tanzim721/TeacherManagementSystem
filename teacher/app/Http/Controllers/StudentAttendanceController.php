@@ -9,6 +9,7 @@ use App\GalleryModel;
 use App\TeachersListModel;
 use App\SessionModel;
 use App\RollModel;
+use App\CourseCodeModel;
 use App\StudentAttendanceModel;
 use DB;
 
@@ -24,7 +25,9 @@ class StudentAttendanceController extends Controller
         return view('StudentAttendance',$data);
     }
     public function Add(){
-        return view('StudentAttendance.add');
+        $data['coursecode'] = CourseCodeModel::all();
+        $data['roll'] = RollModel::all();
+        return view('StudentAttendance.add',$data);
     }
     public function Store(Request $request){
         // dd('ok');
