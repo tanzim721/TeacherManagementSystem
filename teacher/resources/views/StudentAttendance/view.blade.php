@@ -33,23 +33,23 @@
                         </div><!-- /.card-header -->
                         <div class="card-body">
                             {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
-                            {{-- <table id="example1" class="table table-bordered table-hover"> --}}
-                            <table id="example2" class="table table-bordered table-hover text-center">
+                            <table id="example1" class="table table-bordered table-hover">
+                            {{-- <table id="example2" class="table table-bordered table-hover text-center"> --}}
                                 <thead>
                                     <tr>
-                                        <th>SN.</th> 
-                                        <th>Student Attendance</th>
+                                        {{-- <th>SN.</th>  --}}
+                                        <th>Session</th>
+                                        {{-- <th>Course Code</th> --}}
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody id="student_attendance_models">
                                     @foreach($allData as $key => $studentAttendance)
                                     <tr>
-                                        <td>{{$key+1}}.</td>
                                         <td>{{$studentAttendance->session}}</td>
+                                        
                                         <td>
                                             <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="View"><i class="fa fa-eye"></i></a> 
-                                            {{-- <a href="{{route('studentAttendance.delete', $studentAttendance->id)}}" class="btn btn-sm btn-danger" id="delete" title="Delete"><i class="fa fa-trash"></i></a> --}}
                                         </td>
                                     </tr>
                                     @endforeach 

@@ -22,6 +22,7 @@ class StudentAttendanceController extends Controller
         // return view('Roll', [ 'allData' => $allData]);
         $data['allData'] = StudentAttendanceModel::all();
         $data['allData'] = SessionModel::all();
+        // $data['allData'] = CourseCodeModel::all();
         return view('StudentAttendance',$data);
     }
     public function Add(){
