@@ -11,5 +11,5 @@ class StudentAttendanceModel extends Model
     public $incrementing=true;
     public $keyType='int';
     public $timestamps=false;
-}
 
+}

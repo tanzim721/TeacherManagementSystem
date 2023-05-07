@@ -15,9 +15,10 @@ class CreateStudentAttendanceModelsTable extends Migration
     {
         Schema::create('student_attendance_models', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('student_id')->nullable();
+            $table->string('session')->nullable();
+            $table->string('coursecode')->nullable();
+            $table->string('roll')->nullable();
             $table->date('date')->nullable();
-            $table->string('attendance_status')->nullable();
             $table->timestamps();
         });
     }
