@@ -20,13 +20,23 @@ class StudentAttendanceController extends Controller
         // dd('ok');
         // $allData = StudentAttendanceModel::all();
         // return view('Roll', [ 'allData' => $allData]);
-        $data['allData'] = StudentAttendanceModel::all();
-        $data['allData'] = SessionModel::all();
+        // $data['allData'] = StudentAttendanceModel::all();
+        $data['allData'] = SessionModel::orderBy('id', 'desc')->get();
         // $data['allData'] = CourseCodeModel::all();
         return view('StudentAttendance',$data);
     }
+    public function Index2(){
+        // dd('ok');
+        // $allData = StudentAttendanceModel::all();
+        // return view('Roll', [ 'allData' => $allData]);
+        // $data['allData'] = StudentAttendanceModel::all();
+        // $data['allData'] = SessionModel::orderBy('id', 'desc')->get();
+        $data['allData'] = CourseCodeModel::all();
+        return view('StudentAttendance.view2',$data);
+    }
     public function Add(){
         $data['coursecode'] = CourseCodeModel::all();
+        $data['session'] = SessionModel::all();
         $data['roll'] = RollModel::all();
         return view('StudentAttendance.add',$data);
     }

@@ -48,15 +48,52 @@
                 <div class="card-body">
                     <form method="POST" action="{{(@$allData)?route('studentAttendance.update', $allData->id):route('studentAttendance.store')}}" id="myForm" enctype="multipart/form-data">
                         @csrf
-                        <div class="form-row">                            
-                            <div class="form-group col-md-6">
-                              <label for="">Course Code</label>
-                              <select name="coursecode" id="form-control" class="form-control">
-                                @foreach ($coursecode as $item)
-                                  <option value="">{{$item->coursecode}}</option>
-                                @endforeach
-                              </select>
-                            </div>
+                        <div class="form-row">   
+                          <div class="form-group col-md-4" id='datetimepicker2'>
+                            <label for="time" >Time and Date</label>
+                            <input type="date" name="time" class="form-control">
+                            <font style="color:red">{{($errors->has('time'))?($errors->first('time')):''}}</font>
+                          </div> 
+                          <div class="form-group col-md-4">
+                            <label for="session" >Session</label>
+                            <input type="text" value="{{$session->session}}" name="session" class="form-control">
+                            <font style="color:red">{{($errors->has('session'))?($errors->first('session')):''}}</font>
+                        </div>
+                          <div class="form-group col-md-4">
+                            <label for="">Course Code</label>
+                            <select name="coursecode" id="form-control" class="form-control">
+                              @foreach ($coursecode as $key => $item)
+                                <option value="">{{$item->coursecode}}</option>
+                              @endforeach
+                            </select>
+                          </div>
+                          {{-- <div class="form-group col-md-4">
+                            <label for="session" >Session</label>
+                            <input type="text" value="{{$session->session}}" name="session" class="form-control">
+                            <font style="color:red">{{($errors->has('session'))?($errors->first('session')):''}}</font>
+                          </div> --}}
+                        </div>
+                        <div class="form-row">
+                          <table id="example2" class="table table-bordered table-hover text-center">
+                            <thead>
+                              <tr>
+                                  <th>Roll</th>
+                                  <th>Attendance Status</th>
+                              </tr>
+                            </thead>
+                            <tbody id="">
+                              @foreach($roll as $key => $roll)
+
+                                <tr>
+                                    <td>{{$roll->roll}}</td>
+                                    <td>
+                                    
+                                    </td>
+                                </tr>
+                                @endforeach 
+
+                            </tbody>
+                          </table>
                         </div>
                     </form>          
                   </div>

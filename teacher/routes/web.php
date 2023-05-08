@@ -64,7 +64,8 @@ Route::GET('/coursecode/delete/{id}', 'CourseCodeController@Delete')->name('cour
 
 
 //Students Attendance.....
-Route::GET('/studentAttendance', 'StudentAttendanceController@Index')->name('studentAttendance.view');
+Route::GET('/studentAttendance/session', 'StudentAttendanceController@Index')->name('studentAttendance.view');
+Route::GET('/studentAttendance/course/{id}', 'StudentAttendanceController@Index2')->name('studentAttendance.view2');
 Route::GET('/studentAttendance/add', 'StudentAttendanceController@Add')->name('studentAttendance.add');
 Route::POST('/studentAttendance/store', 'StudentAttendanceController@Store')->name('studentAttendance.store');
 Route::GET('/studentAttendance/edit/{id}', 'StudentAttendanceController@Edit')->name('studentAttendance.edit');
