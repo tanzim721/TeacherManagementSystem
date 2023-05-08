@@ -49,7 +49,7 @@
                                         <td>{{$studentAttendance->session}}</td>
                                         <td>
                                             <a href="{{route('studentAttendance.view2')}}" class="btn btn-sm btn-info" title="View"><i class="fa fa-eye"></i></a> 
-                                            <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="edit"><i class="fa fa-edit"></i></a> 
+                                            {{-- <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="edit"><i class="fa fa-edit"></i></a>  --}}
                                         </td>
                                     </tr>
                                     @endforeach 

@@ -63,11 +63,7 @@
                               @endforeach
                             </select>
                           </div>
-                          {{-- <div class="form-group col-md-4">
-                            <label for="session" >Session</label>
-                            <input type="text" value="{{$session->session}}" name="session" class="form-control">
-                            <font style="color:red">{{($errors->has('session'))?($errors->first('session')):''}}</font>
-                          </div> --}}
+                          
                         </div>
                         <div class="form-row">
                           <table id="example2" class="table table-bordered table-hover text-center">

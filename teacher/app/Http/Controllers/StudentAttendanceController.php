@@ -48,7 +48,7 @@ class StudentAttendanceController extends Controller
         $data = new StudentAttendanceModel();
         $data->attendance_status = $request->attendance_status;
         $data->save();
-        return redirect()->route('studentAttendance.view')->with('success', 'Data Inserted Successfully');
+        return redirect()->route('studentAttendance.details')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
         $editData = StudentAttendanceModel::find($id);
