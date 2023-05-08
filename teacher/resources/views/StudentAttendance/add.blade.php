@@ -54,11 +54,7 @@
                             <input type="date" name="time" class="form-control">
                             <font style="color:red">{{($errors->has('time'))?($errors->first('time')):''}}</font>
                           </div> 
-                          <div class="form-group col-md-4">
-                            <label for="session" >Session</label>
-                            <input type="text" value="{{$session->session}}" name="session" class="form-control">
-                            <font style="color:red">{{($errors->has('session'))?($errors->first('session')):''}}</font>
-                        </div>
+                          
                           <div class="form-group col-md-4">
                             <label for="">Course Code</label>
                             <select name="coursecode" id="form-control" class="form-control">
@@ -77,23 +73,43 @@
                           <table id="example2" class="table table-bordered table-hover text-center">
                             <thead>
                               <tr>
-                                  <th>Roll</th>
-                                  <th>Attendance Status</th>
+                                <th>Roll</th>
+                                <th>Attendance Status</th>
                               </tr>
+                              {{-- <tr>
+                                <th class="text-center btn present_all" style="display; table-cell;">Present</th>
+                                <th class="text-center btn absent_all" style="display; table-cell;">Absent</th>
+                              </tr> --}}
                             </thead>
                             <tbody id="">
                               @foreach($roll as $key => $roll)
-
                                 <tr>
                                     <td>{{$roll->roll}}</td>
-                                    <td>
-                                    
+                                    <td colspan="2">
+                                      <div class="switch-toggle switch-2 switch-candy">
+                                        <input type="radio" value="Present" name="attendance_status{{$key}}" class="present"  id="present{{$key}}" checked="checked">
+                                        <label for="present{{$key}}">Present</label>
+
+                                        <input type="radio" value="Absent" name="attendance_status{{$key}}" class="absent" id="absent{{$key}}" >
+                                        <label for="absent{{$key}}">Absent</label>
+                                      </div>
                                     </td>
                                 </tr>
                                 @endforeach 
 
                             </tbody>
                           </table>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-5">
+
+                          </div>
+                          <div class="form-group col-md-2">
+                            <button type="submit" class="btn btn-primary ">{{(@$allData)?'Update':'Submit'}}</button>
+                          </div>
+                          <div class="col-md-5">
+
+                          </div>
                         </div>
                     </form>          
                   </div>
