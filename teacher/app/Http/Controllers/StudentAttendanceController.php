@@ -28,7 +28,6 @@ class StudentAttendanceController extends Controller
     public function Index2(){
         // dd('ok');
         // $allData = StudentAttendanceModel::all();
-        // return view('Roll', [ 'allData' => $allData]);
         // $data['allData'] = StudentAttendanceModel::all();
         // $data['allData'] = SessionModel::orderBy('id', 'desc')->get();
         $data['allData'] = CourseCodeModel::all();
