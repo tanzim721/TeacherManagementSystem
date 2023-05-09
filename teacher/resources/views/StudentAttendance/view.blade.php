@@ -29,7 +29,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="text-bold">Student Attendance List</h4>
-                            {{-- <a class="btn btn-success float-right btn-sm" href="{{route('studentAttendance.add')}}"><i class="fa fa-plus-circle"></i> Add Student Attendance</a> --}}
+                            <a class="btn btn-success float-right btn-sm" href="{{route('studentAttendance.add')}}"><i class="fa fa-plus-circle"></i> Add Student Attendance</a>
                         </div><!-- /.card-header -->
                         <div class="card-body">
                             {{-- <table id="VisitorDt" class="table table-bordered table-hover text-center"> --}}
@@ -48,7 +48,7 @@
                                         <td>{{$key+1}}.</td>
                                         <td>{{$studentAttendance->session}}</td>
                                         <td>
-                                            <a href="{{route('studentAttendance.view2')}}" class="btn btn-sm btn-info" title="View"><i class="fa fa-eye"></i></a> 
+                                            <a href="{{route('studentAttendance.add')}}" class="btn btn-sm btn-info" title="View"><i class="fa fa-eye"></i></a> 
                                             {{-- <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="edit"><i class="fa fa-edit"></i></a>  --}}
                                         </td>
                                     </tr>

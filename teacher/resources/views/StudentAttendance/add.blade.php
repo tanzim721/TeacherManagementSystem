@@ -51,7 +51,7 @@
                         <div class="form-row">   
                           <div class="form-group col-md-4" id='datetimepicker2'>
                             <label for="time" >Time and Date</label>
-                            <input type="date" name="time" class="form-control">
+                            <input type="date" name="time" class="checkdate form-control singledatepicker">
                             <font style="color:red">{{($errors->has('time'))?($errors->first('time')):''}}</font>
                           </div> 
                           
@@ -119,5 +119,37 @@
         </section>
         <!-- /.content -->
       </div> 
+
+      <script type="text/javascript">
+        // $(function () {
+        // $.validator.setDefaults({
+        //   submitHandler: function () {
+        //     alert( "Form successful submitted!" );
+        //   }
+        // });
+        $(document).ready(function(){
+          $('#myForm').validate({
+            rules: {
+                date: {
+                  required: true,
+                }
+              },
+              messages: {
+                
+              },
+              errorElement: 'span',
+              errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+              },
+              highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+              },
+              unhighlight: function (element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+              }  
+          });
+        });
+      </script>
 
 @endsection

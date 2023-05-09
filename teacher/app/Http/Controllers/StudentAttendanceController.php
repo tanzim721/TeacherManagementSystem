@@ -45,9 +45,20 @@ class StudentAttendanceController extends Controller
         $this->validate($request, [
             'attendance_status' => 'required|unique:student_attendance_models,attendance_status'
         ]);
-        $data = new StudentAttendanceModel();
-        $data->attendance_status = $request->attendance_status;
-        $data->save();
+        $countStudent = count($request->roll);
+        for ($i=0; $i < countStudent; $i++) { 
+            $attendance_status = 'attendance_status'.$i;
+            $coursecode = 'coursecode'.$i;
+            $attend = new StudentAttendanceModel();
+            $attend->roll = $request->roll($i);
+            $attend->coursecode = $request->coursecode;
+            $attend->date = date('Y-m-d',strtotime($request->date));
+            $attend->attendance_status = $request->$attendance_status;
+            $attend->save();
+        }
+        // $data = new StudentAttendanceModel();
+        // $data->attendance_status = $request->attendance_status;
+        // $data->save();
         return redirect()->route('studentAttendance.details')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
