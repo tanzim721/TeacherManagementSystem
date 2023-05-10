@@ -13,7 +13,6 @@ use App\CourseCodeModel;
 use App\StudentAttendanceModel;
 use DB;
 
-
 class StudentAttendanceController extends Controller
 {
     public function Index(){

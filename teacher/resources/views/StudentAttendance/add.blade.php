@@ -81,7 +81,7 @@
                               @foreach($roll as $key => $roll)
                                 <tr>
                                     <td>{{$roll->roll}}</td>
-                                    <td colspan="2">
+                                    <td colspan="2">        
                                       <div class="switch-toggle switch-2 switch-candy">
                                         <input type="radio" value="Present" name="attendance_status{{$key}}" class="present"  id="present{{$key}}" checked="checked">
                                         <label for="present{{$key}}">Present</label>
@@ -91,8 +91,7 @@
                                       </div>
                                     </td>
                                 </tr>
-                                @endforeach 
-
+                              @endforeach 
                             </tbody>
                           </table>
                         </div>
