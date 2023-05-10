@@ -121,16 +121,13 @@
       </div> 
 
       <script type="text/javascript">
-        // $(function () {
-        // $.validator.setDefaults({
-        //   submitHandler: function () {
-        //     alert( "Form successful submitted!" );
-        //   }
-        // });
         $(document).ready(function(){
           $('#myForm').validate({
             rules: {
-                date: {
+                "date": {
+                  required: true,
+                },
+                "coursecode": {
                   required: true,
                 }
               },
