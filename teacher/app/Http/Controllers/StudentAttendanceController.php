@@ -22,7 +22,7 @@ class StudentAttendanceController extends Controller
         // return view('Roll', [ 'allData' => $allData]);
         // $data['allData'] = StudentAttendanceModel::all();
         $data['allData'] = SessionModel::orderBy('id', 'desc')->get();
-        // $data['allData'] = CourseCodeModel::all();
+        // $data['coursecode'] = CourseCodeModel::all();
         return view('StudentAttendance',$data);
     }
     public function Index2(){
@@ -42,7 +42,11 @@ class StudentAttendanceController extends Controller
     public function Store(Request $request){
         // dd('ok');
         $this->validate($request, [
-            'attendance_status' => 'required|unique:student_attendance_models,attendance_status'
+            'date' => 'required',
+            'session' => 'required',
+            'roll' => 'required',
+            'coursecode' => 'required',
+            'attendance_status' => 'required:student_attendance_models,attendance_status'
         ]);
         $countStudent = count($request->roll);
         for ($i=0; $i < countStudent; $i++) { 

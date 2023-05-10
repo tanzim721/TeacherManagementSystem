@@ -39,20 +39,22 @@
                                     <tr>
                                         <th>SN.</th> 
                                         <th>Session</th>
+                                        <th>Course Code</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody id="student_attendance_models">
-                                    @foreach($allData as $key => $studentAttendance)
+                                    {{-- @foreach($allData as $key => $studentAttendance)
                                     <tr>
                                         <td>{{$key+1}}.</td>
                                         <td>{{$studentAttendance->session}}</td>
+                                        <td>{{$studentAttendance->coursecode}}</td>
                                         <td>
                                             <a href="{{route('studentAttendance.add')}}" class="btn btn-sm btn-info" title="View"><i class="fa fa-eye"></i></a> 
-                                            {{-- <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="edit"><i class="fa fa-edit"></i></a>  --}}
+                                            <a href="{{route('studentAttendance.edit', $studentAttendance->id)}}" class="btn btn-sm btn-primary" title="edit"><i class="fa fa-edit"></i></a> 
                                         </td>
                                     </tr>
-                                    @endforeach 
+                                    @endforeach  --}}
                                 </tbody>
                             </table>  
                         </div>

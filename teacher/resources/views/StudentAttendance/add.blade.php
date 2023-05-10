@@ -59,7 +59,7 @@
                             <label for="">Course Code</label>
                             <select name="coursecode" id="form-control" class="form-control">
                               @foreach ($coursecode as $key => $item)
-                                <option value="">{{$item->coursecode}}</option>
+                                <option value="{{$item->id}}">{{$item->coursecode}}</option>
                               @endforeach
                             </select>
                           </div>
