@@ -54,16 +54,22 @@
                             <input type="date" name="time" class="checkdate form-control singledatepicker">
                             <font style="color:red">{{($errors->has('time'))?($errors->first('time')):''}}</font>
                           </div> 
-                          
                           <div class="form-group col-md-4">
-                            <label for="">Course Code</label>
+                            <label for="text">Session</label>
+                            <select name="coursecode" id="form-control" class="form-control">
+                              @foreach ($session as $key => $item)
+                                <option value="{{$item->id}}">{{$item->session}}</option>
+                              @endforeach
+                            </select>
+                          </div>   
+                          <div class="form-group col-md-4">
+                            <label for="text">Course Code</label>
                             <select name="coursecode" id="form-control" class="form-control">
                               @foreach ($coursecode as $key => $item)
                                 <option value="{{$item->id}}">{{$item->coursecode}}</option>
                               @endforeach
                             </select>
-                          </div>
-                          
+                          </div>                          
                         </div>
                         <div class="form-row">
                           <table id="example2" class="table table-bordered table-hover text-center">

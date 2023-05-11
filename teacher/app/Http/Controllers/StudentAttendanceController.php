@@ -24,14 +24,14 @@ class StudentAttendanceController extends Controller
         // $data['coursecode'] = CourseCodeModel::all();
         return view('StudentAttendance',$data);
     }
-    public function Index2(){
-        // dd('ok');
-        // $allData = StudentAttendanceModel::all();
-        // $data['allData'] = StudentAttendanceModel::all();
-        // $data['allData'] = SessionModel::orderBy('id', 'desc')->get();
-        $data['allData'] = CourseCodeModel::all();
-        return view('StudentAttendance.view2',$data);
-    }
+    // public function Index2(){
+    //     // dd('ok');
+    //     // $allData = StudentAttendanceModel::all();
+    //     // $data['allData'] = StudentAttendanceModel::all();
+    //     // $data['allData'] = SessionModel::orderBy('id', 'desc')->get();
+    //     $data['allData'] = CourseCodeModel::all();
+    //     return view('StudentAttendance.view2',$data);
+    // }
     public function Add(){
         $data['coursecode'] = CourseCodeModel::all();
         $data['session'] = SessionModel::all();
@@ -49,10 +49,11 @@ class StudentAttendanceController extends Controller
         ]);
         $countStudent = count($request->roll);
         for ($i=0; $i < countStudent; $i++) { 
-            $attendance_status = 'attendance_status'.$i;
-            $coursecode = 'coursecode'.$i;
+            // $attendance_status = 'attendance_status'.$i;
+            // $coursecode = 'coursecode'.$i;
             $attend = new StudentAttendanceModel();
-            $attend->roll = $request->roll($i);
+            $attend->roll = $request->roll[$i];
+            $attend->coursecode = $request->session;
             $attend->coursecode = $request->coursecode;
             $attend->date = date('Y-m-d',strtotime($request->date));
             $attend->attendance_status = $request->$attendance_status;
@@ -61,7 +62,7 @@ class StudentAttendanceController extends Controller
         // $data = new StudentAttendanceModel();
         // $data->attendance_status = $request->attendance_status;
         // $data->save();
-        return redirect()->route('studentAttendance.details')->with('success', 'Data Inserted Successfully');
+        return redirect()->route('studentAttendance.view')->with('success', 'Data Inserted Successfully');
     }
     public function Edit($id){
         $editData = StudentAttendanceModel::find($id);
