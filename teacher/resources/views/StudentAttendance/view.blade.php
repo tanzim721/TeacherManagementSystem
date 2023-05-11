@@ -39,9 +39,10 @@
                                     <tr>
                                         <th>SN.</th>
                                         <th>Session</th> 
-                                        <th>Roll</th>
+                                        {{-- <th>Roll</th>
                                         <th>Course Code</th>
-                                        <th>Date</th>
+                                        <th>Date</th> --}}
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody id="student_attendance_models">
@@ -49,9 +50,9 @@
                                     <tr>
                                         <td>{{$key+1}}.</td>
                                         <td>{{$studentAttendance->session}}</td>
-                                        <td>{{$studentAttendance->roll}}</td>
+                                        {{-- <td>{{$studentAttendance->roll}}</td>
                                         <td>{{$studentAttendance->coursecode}}</td>
-                                        <td>{{$studentAttendance->date}}</td>
+                                        <td>{{$studentAttendance->date}}</td> --}}
                                         <td>
                                             <a href="{{route('studentAttendance.add')}}" class="btn btn-sm btn-primary" title="View"><i class="fa fa-eye"></i></a> 
                                         </td>

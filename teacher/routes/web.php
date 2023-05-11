@@ -64,7 +64,7 @@ Route::GET('/coursecode/delete/{id}', 'CourseCodeController@Delete')->name('cour
 
 
 //Students Attendance.....
-Route::GET('/studentAttendance/session', 'StudentAttendanceController@Index')->name('studentAttendance.view');
+Route::GET('/studentAttendance/view', 'StudentAttendanceController@Index')->name('studentAttendance.view');
 // Route::GET('/studentAttendance/course', 'StudentAttendanceController@Index2')->name('studentAttendance.view2');
 // Route::GET('/studentAttendance/course/details', 'StudentAttendanceController@Index2')->name('studentAttendance.view2');
 Route::GET('/studentAttendance/add', 'StudentAttendanceController@Add')->name('studentAttendance.add');

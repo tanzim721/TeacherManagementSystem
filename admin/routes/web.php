@@ -44,7 +44,7 @@ Route::GET('/teachers/edit/{id}', 'TeachersController@Edit')->name('teachers.edi
 Route::POST('/teachers/update/{id}', 'TeachersController@Update')->name('teachers.update');
 Route::GET('/teachers/delete/{id}', 'TeachersController@Delete')->name('teachers.delete');
 
-//Notice List.................
+//Notice List................. 
 Route::GET('/notice', 'NoticeController@Index')->name('notice.view');
 Route::GET('/notice/add', 'NoticeController@Add')->name('notice.add');
 Route::POST('/notice/store', 'NoticeController@Store')->name('notice.store');
