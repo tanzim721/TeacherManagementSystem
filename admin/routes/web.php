@@ -86,3 +86,5 @@ Route::GET('/coursecode/edit/{id}', 'CourseCodeController@Edit')->name('courseco
 Route::POST('/coursecode/update/{id}', 'CourseCodeController@Update')->name('coursecode.update');
 Route::GET('/coursecode/delete/{id}', 'CourseCodeController@Delete')->name('coursecode.delete');
 
+
+
