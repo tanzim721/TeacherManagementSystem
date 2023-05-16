@@ -2,20 +2,25 @@
     <div class="row p-5 bg-dark text-light text-left">
         <div class="col-md-4">
             <h3>Follow Us</h3>
-            <div class="pl-3">
-                <a href="">Link 1</a><br>
-                <a href="">Link 2</a><br>
-                <a href="">Link 3</a><br>
-                <a href="">Link 4</a><br>
+            <div class="pl-3 footerLink">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                <a href="" class="text-white">About the University</a><br>
+                <a href="" class="text-white">Mission</a><br>
+                <a href="" class="text-white">Objectives</a><br>
+                <a href="" class="text-white">Vision</a><br>
+                <a href="" class="text-white">PUST Journal</a><br>
+                <a href="" class="text-white">Library</a><br>
             </div>
         </div>       
         <div class="col-md-4">
             <h3>More Information</h3>
-            <div class="pl-3">
-                <a href="">Link 1</a><br>
-                <a href="">Link 2</a><br>
-                <a href="">Link 3</a><br>
-                <a href="">Link 4</a><br>
+            <div class="pl-3 footerLink">
+                <a href="" class="text-white">BSc & MSc Programs</a><br>
+                <a href="" class="text-white">MPhil & PhD Programs</a><br>
+                <a href="" class="text-white">Complete Research</a><br>
+                <a href="" class="text-white">PUST Journal</a><br>
+                <a href="" class="text-white">Web Mail</a><br>
+                <a href="" class="text-white">Privacy Policy</a><br>
             </div>
         </div>
         <div class="col-md-4">
