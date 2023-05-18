@@ -13,13 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-    
-Route::get('/', 'HomeController@HomeIndex')->name('home');
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/login', 'LoginController@loginIndex')->name('login');
+Route::get('/onLogin', 'LoginController@onLoginIndex')->name('onLogin');
 
 
+Route::get('/home', 'HomeController@HomeIndex')->name('home');
 
 //Teachers List.................
 Route::GET('/teachers', 'TeachersController@Index')->name('teachers.view');

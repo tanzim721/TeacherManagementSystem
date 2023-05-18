@@ -14,7 +14,11 @@ class CreateLoginModelsTable extends Migration
     public function up()
     {
         Schema::create('login_models', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('username')->nullable();
+            $table->string('password')->nullable();
             $table->timestamps();
         });
     }
