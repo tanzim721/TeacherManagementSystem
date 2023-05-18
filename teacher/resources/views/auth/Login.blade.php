@@ -147,12 +147,43 @@
             </div>
         </div>
     </div>
+
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/jquery-3.2.1.slim.min.js')}}"></script>
+    <script src="{{asset('js/jquery.validate.min.js')}}"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/custom.js')}}"></script>
+    <script src="{{asset('js/sidebar.min.js')}}"></script>
+    <script src="{{asset('js/sidebarmenu.js')}}"></script>
+    <script src="{{asset('js/sticky-kit.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap-datetimepicker.min.js')}}"></script>
+    <script src="{{asset('js/fullcalendar.min.js')}}"></script>
+    <script src="{{asset('js/toastr.min.js')}}"></script>
+    <script src="{{asset('js/axios.min.js')}}"></script>
+
+    
     <script type="text/javascript">
         $('.loginForm').on('submit', function(event){
             event.preventDefault();
             let formData = $(this).serializeArray();
             let userName = formData[0]['value'];
             let password = formData[1]['value'];
+            let url = "/onLogin";
+
+            axios.post(url,{
+                user:userName,
+                pass:password
+            }).then(function(response){
+                if(response.status==200 && response.data==1){
+                    window.location.href="/";
+                }
+                else{
+                    toastr.error('Login fail! try again.');
+                }
+            }).catch(function(error){
+                toastr.error('Login fail! try again.');
+            });
+
         });
     </script>
 </body>
