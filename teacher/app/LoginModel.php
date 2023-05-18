@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ToDoModel extends Model
+class LoginModel extends Model
 {
     //
 }
