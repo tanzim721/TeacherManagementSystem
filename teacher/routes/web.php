@@ -18,8 +18,8 @@ use App\Http\Controllers\RegisterController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login', 'LoginController@loginIndex')->name('login');
-Route::post('/onLogin', 'LoginController@onLogin')->name('onLogin');
+Route::get('/login', 'RegisterController@create')->name('login');
+Route::post('/register', 'RegisterController@store')->name('register');
 
 
 Route::get('/home', 'HomeController@HomeIndex')->name('home');
