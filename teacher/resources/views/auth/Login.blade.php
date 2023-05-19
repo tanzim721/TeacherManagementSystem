@@ -161,7 +161,7 @@
     <script src="{{asset('js/toastr.min.js')}}"></script>
     <script src="{{asset('js/axios.min.js')}}"></script>
 
-    
+
     <script type="text/javascript">
         $('.loginForm').on('submit', function(event){
             event.preventDefault();
@@ -175,7 +175,7 @@
                 pass:password
             }).then(function(response){
                 if(response.status==200 && response.data==1){
-                    window.location.href="/";
+                    window.location.href="/home";
                 }
                 else{
                     toastr.error('Login fail! try again.');

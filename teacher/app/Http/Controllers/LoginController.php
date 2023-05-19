@@ -12,7 +12,7 @@ class LoginController extends Controller
         return view('auth.Login');
     }
     public function onLogin(Request $request){
-        $users = $request->input('user');
+        $user = $request->input('user');
         $pass = $request->input('pass');
         $countValue = AdminModel::where('username','=',$user)->where('password','=',$pass)->count();
         if($countValue==1){
