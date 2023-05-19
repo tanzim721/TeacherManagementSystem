@@ -162,7 +162,7 @@
     <script src="{{asset('js/axios.min.js')}}"></script>
 
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $('.loginForm').on('submit', function(event){
             event.preventDefault();
             let formData = $(this).serializeArray();
@@ -185,6 +185,6 @@
             });
 
         });
-    </script>
+    </script> --}}
 </body>
 </html>
