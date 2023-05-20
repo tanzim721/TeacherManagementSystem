@@ -116,6 +116,7 @@
             <div class="card">
                 <div class="card-body">
                     <form action="" class="loginForm">
+                        {{-- @csrf --}}
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>

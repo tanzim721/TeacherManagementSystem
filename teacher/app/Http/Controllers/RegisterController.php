@@ -22,5 +22,18 @@ class RegisterController extends Controller
         ]);
         return view('welcome');
     }
+    // public function store(Request $request){
+    //     $this->validate($request, [
+    //         'name' => 'required',
+    //         'password' => 'required',
+    //         'email' => 'required|unique:users, email',
+    //     ]);
+    //     $data = new User();
+    //     $data->name = $request->name;
+    //     $data->email = $request->email;
+    //     $data->password = $request->password;
+    //     $data->save();
+    //     return redirect()->route('welcome')->with('success', 'Data Inserted Successfully');
+    // }
 }
   
