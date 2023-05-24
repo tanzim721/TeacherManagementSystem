@@ -18,15 +18,13 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::GET('/', 'HomeController@HomeIndex');
-Route::GET('/visitor', 'VisitorController@VisitorIndex')->name('visitor');
-
+ 
 Route::GET('/services', 'ServiceController@Index')->name('services.view');
 Route::GET('/services/add', 'ServiceController@Add')->name('services.add');
 Route::POST('/services/store', 'ServiceController@Store')->name('services.store');
 Route::GET('/services/edit/{id}', 'ServiceController@Edit')->name('services.edit');
 Route::POST('/services/update/{id}', 'ServiceController@Update')->name('services.update');
 Route::GET('/services/delete/{id}', 'ServiceController@Delete')->name('services.delete');
-// Route::get('/getServicesData', 'ServiceController@getServicesData');
 
 //Gallery................
 Route::GET('/gallery', 'GalleryController@Index')->name('gallery.view');
