@@ -26,7 +26,8 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="{{route('visitor')}}" class="small-box-footer">View Visitor <i class="fas fa-arrow-circle-right"></i></a>
+                        {{-- <a href="{{route('visitor')}}" class="small-box-footer">View Visitor <i class="fas fa-arrow-circle-right"></i></a> --}}
+                        <a href="#" class="small-box-footer">View Visitor <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                     

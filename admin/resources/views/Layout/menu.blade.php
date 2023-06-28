@@ -21,7 +21,8 @@
             </a>
         </li> 
         <li class="nav-item">
-            <a href="{{route('visitor')}}" class="nav-link"> 
+            <a href="" class="nav-link"> 
+            {{-- <a href="{{route('visitor')}}" class="nav-link">  --}}
                 <i class="nav-icon fas fa-eye"></i> 
                 <p> Visitor
                     <i class="fas fa-angle-left right"></i>

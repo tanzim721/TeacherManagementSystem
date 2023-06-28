@@ -12,7 +12,7 @@
 <nav class="mt-2 treeview">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-            <a href="{{asset('/')}}" class="nav-link">
+            <a href="{{asset('/home')}}" class="nav-link">
                 <i class="nav-icon fas fa-home"></i> 
                 <p>
                     Home
