@@ -26,7 +26,7 @@
                 <p>
                     Student Attendance
                     <i class="fas fa-angle-left right"></i>
-                </p>
+                </p> 
             </a>
         </li>
         <li class="nav-item">

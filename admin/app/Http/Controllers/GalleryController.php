@@ -3,22 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\VisitorModel;
 use App\ServicesModel;
-use App\TeachersListModel;
-use App\SessionModel;
-use App\CTandAssignmentModel;
-use App\RollModel;
-use App\CourseCodeModel;
 use App\GalleryModel;
+use App\noticeModel;
 use DB;
+
 
 class GalleryController extends Controller
 {
     public function Index(){
         // dd('ok');
         $allData = GalleryModel::all();
-        return view('Gallery', [ 'allData' =>$allData]);
+        return view('Gallery', ['allData'=>$allData]);
     }
     public function Add(){
         return view('Gallery.add');
@@ -27,12 +25,14 @@ class GalleryController extends Controller
         // dd('ok');
         $this->validate($request, [
             'name' => 'required',
-            'image' => 'required',
-            'des' => 'required:gallery_models,des'
+            'des' => 'required',
+            'time' => 'required',
+            'image' => 'required|unique:gallery_models,image'
         ]);
         $data = new GalleryModel();
         $data->name = $request->name;
         $data->des = $request->des;
+        $data->time = $request->time;
         $data->image = $request->image;
         $data->save();
         return redirect()->route('gallery.view')->with('success', 'Data Inserted Successfully');
@@ -41,10 +41,14 @@ class GalleryController extends Controller
         $editData = GalleryModel::find($id);
         return view('Gallery.edit', compact('editData'));
     }
+    // public function Download(Request $request, $file){
+    //     return response()->download(public_path('assets/'.$file));
+    // }
     public function Update(Request $request, $id){
         $data = GalleryModel::find($id);
-        $data->name = $request->name;   
-        $data->gallery = $request->gallery;
+        $data->name = $request->name;
+        $data->des = $request->des;
+        $data->time = $request->time;
         $data->image = $request->image;
         $data->save();
         return redirect()->route('gallery.view')->with('success','Data Update Successfully');

@@ -33,9 +33,9 @@
                     <h4>PUST</h4>
                 </div>
             </div>
-            <p class="m-1 fa fa-map-marker"> Pabna University of Science and Technology</p>
+            <p class="m-1 fa fa-map-marker"> Pabna University of Science and Technology</p><br>
             <p class="m-1 fa fa-phone-square"> +8802588842742</p><br>
-            <p class="m-1 fa fa-envelope"> bijon16@yahoo.com</p>
+            <p class="m-1 fa fa-envelope"> bijon16@yahoo.com</p><br>
             <p class="m-1 fa fa-envelope"> registraroffice@pust.ac.bd</p>
         </div>
            

@@ -18,6 +18,7 @@ class CreateGalleryModelsTable extends Migration
             $table->string('name')->nullable();
             $table->string('des')->nullable();
             $table->string('image')->nullable();
+            $table->string('time')->nullable();
             $table->timestamps();
         });
     }

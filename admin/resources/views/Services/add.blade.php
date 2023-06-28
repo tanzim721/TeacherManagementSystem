@@ -43,7 +43,7 @@
                     <a class="btn btn-success float-right btn-sm" href="{{route('services.view')}}"><i class="fa fa-list"></i> View List</a>
                 </div><!-- /.card-header -->
                 <div class="card-body">
-                    <form method="POST" action="{{(@$ServicesData)?route('services.update', $ServicesData->id):route('services.store')}}" id="myForm">
+                    <form method="POST" action="{{(@$ServicesData)?route('services.update', $ServicesData->id):route('services.store')}}" id="myForm" enctype="multipart/form-data">
                         @csrf
                         <div class="form-row">                            
                             <div class="form-group col-md-4">
