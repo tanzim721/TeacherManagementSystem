@@ -72,7 +72,7 @@
         <li class="nav-item">
             <a href="{{route('ctandassignament.view')}}" class="nav-link"> 
                 <i class="nav-icon fa fa-sort-numeric-down" aria-hidden="true"></i>
-                <p> CT or Assignament
+                <p> CT or Assignment
                     <i class="fas fa-angle-left right"></i>
                 </p>
             </a>

@@ -4,10 +4,11 @@
         @foreach($allData as $key => $gallery)
         <div class="col-md-3 width-100% p-2">
             <div class="card" style="width: 15rem; height:365px p-2" >
-                <img style="width: 100%; height:200px" class="card-img-top" src="{{$gallery->gallery_image}}" alt="Card image cap">
+                <img style="width: 100%; height:200px" class="card-img-top" src="{{$gallery->image}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title text-bold text-danger">{{$gallery->gallery_name}}</h5><br>
-                    <p class="card-text fa fa-phone-square"> {{$gallery->gallery_des}}</p><br>
+                    <h5 class="card-title text-bold text-danger">{{$gallery->name}}</h5><br>
+                    <p class="card-text fa fa-phone-square"> {{$gallery->des}}</p><br>
+                    <p class="card-text fa fa-time"> {{$gallery->time}}</p><br>
                     <a href="#" class="btn btn-info ml-4">Go Details</a>
                 </div>      
             </div>

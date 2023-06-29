@@ -14,7 +14,7 @@ body{
 }
 
 .banner{
-    max-height: 550px;
+    max-height: 750px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@ body{
 } */
 .backBanner{
     background-image: url('/ICE.JPG');
-    max-height: 500px;
+    max-height: 700px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
