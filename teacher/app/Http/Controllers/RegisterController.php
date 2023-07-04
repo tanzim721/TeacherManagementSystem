@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Hash;
 
@@ -34,6 +33,11 @@ class RegisterController extends Controller
         $data->password = $request->password;
         $data->save();
         return redirect()->route('welcome')->with('success', 'Data Inserted Successfully');
+    }
+    public function register(Request $request){
+        $user = User::create($request->validated());
+        auth()->login($user);
+        return redirect('/')->with('success', 'Account successfuly register');
     }
 }
   
